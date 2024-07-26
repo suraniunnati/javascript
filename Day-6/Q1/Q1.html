@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            height: 300px;
+            width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px 0 ;
+            text-align: center;
+            padding: 20px;
+            background-color: #f8eded78;
+        }
+        button{
+            background-color: #f5cdcd;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>::  calculate the tax amount ::</p>
+        <br><br>
+        <label for="amount">Enter yearly income : </label>
+        <input type="text" id="amount">
+        <button onclick="rate()">click</button>
+        <br>
+        <h4 id="tex"></h4>
+        <h4 id="data"></h4>
+    </div>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
