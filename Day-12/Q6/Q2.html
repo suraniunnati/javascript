@@ -1,0 +1,48 @@
+<!-- Count Prime Number between 1 to 50 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Q (Q2)</title>
+</head>
+
+<body>
+  <input type="text" id="num" />
+  <button onclick="fun()">click</button>
+
+  <h4 id="text"></h4>
+
+  <script>
+    function fun() {
+      let number = document.getElementById("num").value;
+
+      function Prime(number) {
+        let m = 0;
+        for (x = 1; x <= number; x++) {
+          if (number % x == 0) {
+            m++;
+          }
+        }
+        if (m == 2) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      
+      let count = 0;
+      for (x = 1; x <= 100; x++) {
+        if (Prime(x)) {
+          count++;
+        }
+      }
+      console.log(count)
+
+    }
+  </script>
+</body>
+
+</html>

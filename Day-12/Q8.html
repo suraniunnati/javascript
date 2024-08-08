@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+    <h1 id="Name">Welcome!</h1>
+    <input type="text" name="" id="Change">
+    <button id="" onclick=" resetText()">Change </button>
+    <button id="" onclick="resett()">Reset </button>
+
+</center>
+    
+    <script>
+        let resetText=()=>{
+            let dh=document.getElementById("Change").value
+
+            document.getElementById("Name").innerHTML=`${dh}`;
+
+            
+        }
+
+        let resett=()=>{
+            document.getElementById("Name").innerHTML=`Welcome!`;
+        }
+
+    </script>
+</body>
+</html>

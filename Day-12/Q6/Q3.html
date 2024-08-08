@@ -1,0 +1,44 @@
+<!-- Count Even Number between 1 to 100 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q (Q1)</title>
+  </head>
+  <body>
+    <input type="text" id="num" />
+    <button onclick="fun()">click</button>
+
+    <h4 id="text"></h4>
+  </body>
+</html>
+
+<script>
+  function fun() {
+    let number = document.getElementById("num").value;
+
+    function Prime(number) {
+      let m = 0;
+      for (x = 1; x <= number; x++) {
+        if (number % x == 0) {
+          m++;
+        }
+      }
+      if (m %2==0) {
+       return true;
+      } else {
+        return false;
+      }
+    }
+    let store=""
+    for(x=1;x<=number;x++){
+        if(Prime(x)){
+          store+= x + " - " +  "even number <br>" 
+          document.getElementById("text").innerHTML=`${store} `
+        }
+      }
+    Prime();
+  }
+</script>

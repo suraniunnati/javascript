@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+    <h1 id="OldName">Welcome!</h1>
+    <input type="text" name="" id="Change">
+    <button id="" onclick=" resetText()">Change </button>
+    <button id="" onclick="resett()">Reset </button>
+    <button id="color" onclick="changeColor()">Change Color</button>
+
+</center>
+    
+    <script>
+        let resetText=()=>{
+            let dh=document.getElementById("Change").value
+
+            document.getElementById("OldName").innerHTML=`${dh}`;    
+        }
+
+        let resett=()=>{
+            document.getElementById("OldName").innerHTML=`Welcome!`;}
+
+            function changeColor() {
+            var heading = document.getElementById("OldName");
+            heading.style.color = "red";
+        }    
+
+    </script>
+</body>
+</html>
