@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2</title>
+  </head>
+  <body>
+    <center>
+      <label for="">enter string :</label>
+      <input type="text" id="data" />
+      <button onclick="fun()">click</button>
+      <h4 id="text"></h4>
+    </center>
+
+    <script>
+      function fun() {
+        let name = document.getElementById("data").value;
+
+        let str = "";
+        for (x = name.length - 1; x >= 0; x--) {
+          str += name[x];
+        }
+        document.getElementById("text").innerHTML = `${str}`;
+      }
+    </script>
+  </body>
+</html>
