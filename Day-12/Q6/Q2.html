@@ -19,6 +19,16 @@
     function fun() {
       let number = document.getElementById("num").value;
 
+         
+      let count = 1;
+      for (x = 1; x <= number; x++) {
+        if (Prime(x)==true) {
+          count++;
+        }
+      }
+      console.log(count)
+
+
       function Prime(number) {
         let m = 0;
         for (x = 1; x <= number; x++) {
@@ -32,14 +42,7 @@
           return false;
         }
       }
-      
-      let count = 0;
-      for (x = 1; x <= 100; x++) {
-        if (Prime(x)) {
-          count++;
-        }
-      }
-      console.log(count)
+   
 
     }
   </script>
