@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3</title>
+    <style>
+      div{
+          padding: 20px;
+          box-shadow: 0 0 10px 0;
+          width: 500px;
+          background-color: rgb(246, 252, 252);
+          margin-top: 18%;
+      }
+      button{
+          width: 100px;
+          background-color: rgb(213, 236, 247);
+      }
+  </style>
+  </head>
+  <body>
+    <center>
+      <div>
+        <p>:: counts the number of consonants in a given string ::</p>
+        <br><br>
+      <label for="">enter string :</label>
+      <input type="text" id="data" />
+      <br><br>
+      <button onclick="fun()">click</button>
+      <h4 id="text"></h4>
+    </div>
+    </center>
+
+    <script>
+      function fun() {
+        let name = document.getElementById("data").value;
+        let count = 0;
+        for (x = 0; x <= name.length  ; x++) {
+          if (
+            name[x] == "a" ||
+            name[x] == "e" ||
+            name[x] == "i" ||
+            name[x] == "o" ||
+            name[x] == "u"
+          ) {
+            count++;
+          }
+          document.getElementById("text").innerHTML = `${count} not a consonants`;
+        }
+      
+      }
+    </script>
+  </body>
+</html>

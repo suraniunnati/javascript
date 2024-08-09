@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <style>
+        div{
+            padding: 20px;
+            box-shadow: 0 0 10px 0;
+            width: 500px;
+            background-color: rgb(246, 252, 252);
+            margin-top: 18%;
+        }
+        button{
+            width: 100px;
+            background-color: rgb(213, 236, 247);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+    <p>:: takes a positive integer as input and returns the sum of its digits ::</p>
+    <br>
+    <label for="">Enter anumber :</label>
+    <input type="text" id="num">
+    <br><br>
+    <button onclick="fun()">click</button>
+    <h4 id="text"></h4>
+</div>
+</center>
+
+    <script>
+        function fun() {
+        let num = document.getElementById("num").value;
+        let sum=0
+        for (let x = 0; x <= num.length-1; x++) {
+
+          sum += +num[x];  
+        }
+        document.getElementById("text").innerHTML=`sum of number is ${sum}`
+   
+
+    }
+    </script>
+</body>
+</html>
