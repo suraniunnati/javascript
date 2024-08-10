@@ -36,16 +36,11 @@
         let name = document.getElementById("data").value;
         let count = 0;
         for (x = 0; x <= name.length  ; x++) {
-          if (
-            name[x] == "a" ||
-            name[x] == "e" ||
-            name[x] == "i" ||
-            name[x] == "o" ||
-            name[x] == "u"
-          ) {
+          let char=name[x]
+          if (char >= "a" && char <= "z" && char !== "a" && char !== "e" && char !== "i" && char !== "o" && char !== "u") {
             count++;
           }
-          document.getElementById("text").innerHTML = `${count} not a consonants`;
+          document.getElementById("text").innerHTML = `${count}  a consonants`;
         }
       
       }
