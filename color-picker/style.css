@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: url(https://img.freepik.com/free-vector/gradient-blur-pink-blue-abstract-background_53876-117324.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.main{
+    height: 450px;
+    width: 500px;
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px 0;
+    text-align: center;
+    border-radius: 30px;
+}
+.container{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#color{
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 10px;
+}
+ #code{
+    width: 300px;
+    height: 35px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  padding-top: 10px;
+  border-radius: 40px;
+}
+#bun{
+    height: 35px;
+    width: 300px;
+    background-color: rgb(149, 200, 245);
+    border-radius: 20px;
+}
