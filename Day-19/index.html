@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main">
+        <div class="a">
+            <img src="https://www.freeiconspng.com/thumbs/sign-up-icon/sign-up-button-icon-26.png" alt="">
+             <h2 style="color: white;">Signup form</h2></div>
+        <div class="a1">
+            <form id="signupMain">
+                <input type="text" placeholder="userName" id="username"><br>
+                <span id="usernameText"></span>
+                <br><br>
+                <input type="text" placeholder="email ID" id="email"><br>
+                <span id="emailText"></span>
+                <br><br>
+                <input type="password" placeholder="password" id="password"><br>
+                <span id="passwordText"></span><br>
+                <input type="checkbox" onclick="myFunction()" id="show">Show Password
+                
+                <br><br>
+                <input type="text" placeholder="Hobby"><br>
+                <br><br>
+                <select name="" id="gender">
+                    <option value="">Gender</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Outher</option>
+                </select><br>
+                <span id="genderText"></span>
+                <br><br>
+                <input type="submit" id="submit">
+                <br><br>
+            </form>
+            <p id="signupButton">Existing User? Log in</p>
+        </div>
+       
+      
+       
+    </div>
+
+    <div id="main2">
+        <br>
+        <h2>Login form</h2>
+        <form id="loginMain">
+            <input type="text" placeholder="email ID" id="loginEmail"><br>
+            <br><br>
+            <input type="password" placeholder="password" id="loginPassword"><br>
+            <br><br>
+            <input type="submit" id="submit">
+            <br><br>
+     </form>
+     <p id="loginButton">New to websit? Create an account</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
