@@ -31,45 +31,31 @@ body{
  0%{
     box-shadow: 0 0 30px yellow;
  }
- 30%{
+ 20%{
     box-shadow: 0 0 30px blue;
  }
- 50%{
+ 40%{
     box-shadow: 0 0 30px palevioletred;
  }
- 70%{
+ 60%{
     box-shadow: 0 0 30px green;
  }
- 90%{
+ 80%{
     box-shadow: 0 0 30px red;
  }
+ 100%{
+    box-shadow: 0 0 30px yellow;
+ }
+ 
 }
 .main{
     display: flex;
     width: 100%;
     height: 65%;
+    position: relative;
     justify-content: space-evenly;
     align-items: center;
   
-}
-.main .b,.b1,.b2{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-.main .b{
-    border: 2px dashed red;
-}
-.main .b1{
-    border: 2px dashed yellow;
-}
-.main .b2{
-    border: 2px dashed green;
 }
 .main .a,.a1,.a2{
     height:120px ;
@@ -82,6 +68,7 @@ body{
     flex-direction: column;
     box-shadow: 0 0 15px 0 black;
     padding: 10px;
+    position: relative;
    
 }
 .main .a{
@@ -93,6 +80,99 @@ body{
 .main .a2{
     color: rgb(0, 168, 0);
 }
+
+.main .b,.b1,.b2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: move 60s infinite;
+}
+@keyframes move{
+  
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.main .b{
+    position: relative;
+    border: 2px dashed red;
+    /* position: absolute; */
+}
+.uu{
+    position: relative;
+    
+}
+.uu #hou{
+    position: absolute;
+    top: 24%;
+    left: 37%;
+    
+}
+.uu .time1{
+    position: absolute;
+    top: 63%;
+    left: 32%;
+}
+
+.uu1 #min{
+    position: absolute;
+    top: 35px;
+    left: 49px;
+    
+}
+.uu1 .time1{
+    position: absolute;
+    top: 68px;
+    left: 30%;
+}
+
+
+.uu2 #sed{
+    position: absolute;
+    top: 35px;
+    left: 49px;
+    
+}
+.uu2 .time1{
+    position: absolute;
+    top: 68px;
+    left: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+/* #hou{
+    position: absolute;
+    font-size: 50px;
+
+} */
+.main .b1{
+    border: 2px dashed yellow;
+}
+.main .b2{
+    border: 2px dashed green;
+}
+.time{
+    position: absolute;
+    top: 32%;
+}
+.time1{
+    position: absolute;
+    top: 60%;
+}
+
 .btn{
     height: 35%;
     width: 100%;
@@ -124,12 +204,4 @@ body{
     color: rgb(184, 184, 184);
     border: none;
     box-shadow: 0 0 10px 0 rgb(101, 101, 101);
-}
-.time{
-    position: absolute;
-    top: 30%;
-}
-.time1{
-    position: absolute;
-    top: 60%;
 }

@@ -9,7 +9,7 @@ function start() {
 
    a=setInterval(() => {
 
-     let amPm = hour >= 12 ? 'AM' : 'PM';
+     let amPm = hour >= 12 ? "AM": 'PM';
 
     // hour = hour % 12;
     // hour = hour ? hour : 12;
