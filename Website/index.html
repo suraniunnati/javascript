@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeni</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <img src="assets/loading-01.webp" alt="">
+    </div>
+    <button id="top"><img src="https://static.vecteezy.com/system/resources/previews/021/827/971/non_2x/eyewear-logo-with-signal-sign-on-it-vector.jpg" alt=""></button>
+    <!-- header -->
+    <div class="hedline h-[40px] text-right text-[#007B8F] pr-5 leading-10">Enable Accessibility</div>
+    <header class="flex xl:justify-between items-center ">
+        <span class="navbar-btn block xl:hidden p-[1.5vw]" id="toggle"><i class="fa-solid fa-bars"></i></span>
+        <div class="logo w-[12%] flex justify-center items-center"><img src="assets/logo.avif" alt=""></div>
+        <nav class="hidden xl:block w-full xl:w-[43%] h-full">
+            <ul class="flex justify-evenly items-center h-full w-full">
+                <li><a href="">EYEGLASSES</a></li>
+                <li><a href="">SUNGLASSES</a></li>
+                <li><a href="">LANSES</a></li>
+                <li><a href="product.html">COLLECTIONS</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">BRANDS</a></li>
+            </ul>
+        </nav>
+            <div class="search flex justify-center items-center h-full w-[50%] xl:w-[20%]">
+            <input type="text" placeholder="Search glas" id="search" class="w-[90%] xl:w-[90%]"><i class="fa-solid fa-magnifying-glass fa-xl"style="color: #666666;" id="searchIcon"></i>
+        </div>
+            <div class="manu flex items-center xl:itens-none h-full text-[#666666] ms-auto w-[28%]">
+            <div class="imgsearch xl:h-full text-center p-[7px] xl:p-[13px] xl:w-[150px]"><i class="fa-solid fa-camera xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br><span style="background-color: #007B8F;color: white; padding: 5px; border-radius: 20px;" class="text-[7px] xl:text-[12px] hidden xl:block">Visual search</span></div>
+            <div class="login xl:h-full text-center p-[7px] xl:p-[17px]"><a href="creatAccount.html"><i class="fa-solid fa-user xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br> <span class="hidden xl:block">Login</span></a></div>
+            <div class="favorit xl:h-full text-center p-[7px] xl:p-[17px]"><i class="fa-regular fa-heart xl:fa-xl xl:mb-[6px]"style="color: #666666;"></i><br><span class="hidden xl:block"> Favorit</span></div>
+            <div class="help xl:h-full text-center p-[7px] xl:p-[17px]"><i class="fa-solid fa-circle-question xl:fa-xl xl:mb-[6px]"style="color: #666666;"></i><br><span class="hidden xl:block"> Help</span></div>
+            <div class="cart xl:h-full text-center p-[7px] xl:p-[17px]"><a href="Cart.html"><i class="fa-solid fa-cart-shopping xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br><span class="hidden xl:block">Cart</span></a></div>
+        </div>
+    </header>
+
+    <!-- section 1 -->
+     <div class="part1">
+        <div class="a">
+            <h1 class="text-4xl font-bold" style="color: #212529;">Eyewear for Everyone</h1>
+            <p class="text-lg mt-3">Find affordable frames to fit your budget and style.</p>
+        </div>
+        <div class="a1">
+            <div class="a-part h-[90%] w-[18%] text-center"><img src="assets/gl1.jpg" alt="" class="w-[70%]"><br>3-5-Days delivery</div>
+            <div class="a-part h-[90%] w-[18%] text-center"><img src="assets/gl2.jpg" alt="" class="w-[70%]"><br>Eyedlasses</div>
+            <div class="a-part h-[90%] w-[18%] text-center"><img src="assets/gl3.jpg" alt="" class="w-[70%]"><br>Sunglasses</div>
+            <div class="a-part h-[90%] w-[18%] text-center"><img src="assets/gl4.jpg" alt="" class="w-[70%]"><br>Designer Brands</div>
+            <div class="a-part h-[90%] w-[18%] text-center"><img src="assets/gl5.jpg" alt="" class="w-[70%]"><br>Transitions  </div>
+            <div class="a-part h-[90%] w-[18%] text-center"><img src="assets/gl6.jpg" alt="" class="w-[70%]"><br>Blur Light</div>
+        </div>
+     </div>
+
+     <!-- section 2 -->
+      <div class="part2">
+     <div id="slid">
+        <div class="image">
+          <img src="assets/slid1.png" alt="">
+        </div>
+        <div class="image">
+          <img src="assets/slid2.png" alt="">
+        </div>
+        <div class="image">
+           <img src="assets/slid3.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- section 3 -->
+ <div class="part3">
+    <div class="c  h-[60%] w-[22%] rounded-lg bg-[#084045] text-white flex justify-center items-center flex-col"><p class="sale bg-[red] p-2 rounded-2xl" >Sale</p><h1 class=" text-2xl font-bold ms-[12%]">BOGO 20% off</h1> <p class="ms-[25%]">Additionl pairs | code:BOGA20</p></div>
+
+    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/TP-Logo-Tricolor-Black-RGB.svg" alt="" class="h-[25px]">150k+ 4.5 Reviews</div>
+    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/shipping.svg" alt="">30-Days Result</div>
+    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/favorites.svg" alt="">Best Customer Service</div>
+    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/medal.svg" alt="">#1 Online Eyewear<br> Retailer</div>
+    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/gift.svg" alt="">Zenni Rewards</div>
+ </div>
+
+ <!-- section 4 -->
+  <div class="part4">
+    <div class="d h-full">
+        <h1 class="text-4xl font-bold mb-2 ms-5">Best Sellers</h1>
+        <a href="">Eyeglasses</a>
+        <a href="">Sunglasses</a>
+        <a href="">Designer Glasses</a>
+        <button class="rounded-2xl text-center text-white bg-[black]">Shop all <i class="fa-solid fa-angle-right"></i></button>
+    </div>
+    <div class="d1 flex justify-center p-[20px]">
+        <div class="home-demo w-full">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="item1 bg-[#FAFAFA] h-[300px] w-[100%]">
+                    <h3 class="p-1 m-1 bg-[#B2E0E5] rounded-2xl w-[100px] ps-4">Top rated</h3>
+                    <i class="fa-regular fa-heart fa-lg" style="color: #030303;"></i>
+                    <img src="assets/sl1.jpg" alt="" class=" h-[40%] p-[20px] mt-[15%]">
+                </div>
+                <div class="item2 p-3">
+                    <h1 class="text-xl font-bold">$12.95</h1>
+                    <span class="font-semibold"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 4.5 (612)</span>
+                    <p>Square</p>
+                    <button class="bg-[#BC9851] ring ring-black ring-offset-2"></button>
+                    <button class="bg-[red] ring ring-black ring-offset-2"></button>
+                    <button class="bg-[green] ring ring-black ring-offset-2"></button>
+                </div>
+              </div>
+              <div class="item">
+               <div class="item1 bg-[#FAFAFA] h-[300px] w-[100%]">
+                <h3 class="p-1 m-1 bg-[#B2E0E5] rounded-2xl w-[100px] ps-[8.5%]">Sale</h3>
+                <i class="fa-regular fa-heart fa-lg" style="color: #030303;"></i>
+                <img src="assets/sl2.jpg" alt="" class=" h-[40%] p-[20px] mt-[15%]">
+               </div>
+               <div class="item2 p-3">
+                <h1 class="text-xl font-bold">$9.95</h1>
+                <span class="font-semibold"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> Save 67%</span>
+               <p>Was $29.99</p>
+               <button class="bg-[#BC9851] ring ring-black ring-offset-2"></button>
+               <button class="bg-[black] ring ring-black ring-offset-2"></button>
+             </div>
+              </div>
+              <div class="item">
+                <div class="item1 bg-[#FAFAFA] h-[300px] w-[100%]">
+                    <h3 class="p-1 m-1 bg-[#B2E0E5] rounded-2xl w-[100px] ps-[8.5%]">Kids</h3>
+                    <i class="fa-regular fa-heart fa-lg" style="color: #030303;"></i>
+                    <img src="assets/sl3.jpg" alt="" class=" h-[40%] p-[20px] mt-[15%]">
+                </div>
+                <div class="item2 p-3">
+                    <h1 class="text-xl font-bold">$19.95</h1>
+                    <span class="font-semibold"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 4.5(130)</span>
+                    <p>Kids' Round</p>
+                    <button class="bg-[#D6E7F4] ring ring-black ring-offset-2"></button>
+                    <button class="bg-[#382606] ring ring-black ring-offset-2"></button>
+                    <button class="bg-[gray] ring ring-black ring-offset-2"></button>
+                    
+                </div>
+              </div>
+              <div class="item">
+               <div class="item1 bg-[#FAFAFA] h-[300px] w-[100%]">
+                <h3 class="p-1 m-1 bg-[#B2E0E5] rounded-2xl w-[100px] ps-4">Best seller</h3>
+                <i class="fa-regular fa-heart fa-lg" style="color: #030303;"></i>
+                <img src="assets/sl4.jpg" alt="" class=" h-[40%] p-[20px] mt-[15%]">
+               </div>
+               <div class="item2 p-3">
+                <h1 class="text-xl font-bold">$15.95</h1>
+                <span class="font-semibold"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 3.9 (180)</span>
+               <p>Round</p>
+               <button class="bg-[#382606] ring ring-black ring-offset-2"></button>
+               <button class="bg-[blue] ring ring-black ring-offset-2"></button>
+               <button class="bg-[black] ring ring-black ring-offset-2"></button>
+               </div>
+              </div>
+              <div class="item">
+               <div class="item1 bg-[#FAFAFA] h-[300px] w-[100%]">
+                <h3 class="p-1 m-1 bg-[#B2E0E5] rounded-2xl w-[100px] ps-4">Top rated</h3>
+                <i class="fa-regular fa-heart fa-lg" style="color: #030303;"></i>
+                <img src="assets/sl5.jpg" alt="" class=" h-[40%] p-[20px] mt-[15%]">
+               </div>
+               <div class="item2 p-3">
+                <h1 class="text-xl font-bold">$49.99</h1>
+                <span class="font-semibold"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> 4.6 (200)</span>
+               <p>VR Prescription Lenses for Meta Quest</p>
+               <button class="bg-[#D0E4F3] ring ring-black ring-offset-2"></button>
+               <button class="bg-[black] ring ring-black ring-offset-2"></button>
+               </div>
+              </div>
+             
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <!-- section-5 -->
+   <div class="part5">
+    <div id="slid">
+        <div class="images">
+          <img src="assets/sld1.png" alt="">
+        </div>
+        <div class="images">
+          <img src="assets/sld2.png" alt="">
+        </div>
+        <div class="images">
+           <img src="assets/sld3.png" alt="">
+        </div>
+        <div class="images">
+            <img src="assets/sld4.png" alt="">
+         </div>
+   </div>
+    
+    <!-- section 6 -->
+    <div class="part6">
+        <div class="e">
+            <h1 class="text-4xl font-bold" style="color: #212529;">Shop By Frame Shape</h1>
+            <p class="text-lg mt-3">Choose your perfect frames from our stylish colors and patterns.</p>
+        </div>
+        <div class="e1 w-full flex">
+            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm1.svg" alt="" class="w-[70%]"><br>Rectangle</div>
+            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm2.svg" alt="" class="w-[70%]"><br>Square</div>
+            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm3.svg" alt="" class="w-[70%]"><br>Round</div>
+            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm4.svg" alt="" class="w-[70%]"><br>Cat-Eye</div>
+            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm5.svg" alt="" class="w-[70%]"><br>Aviator</div>
+            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm6.svg" alt="" class="w-[70%]"><br>Browline</div>
+            <div class="e-part h-[90%] w-[14%] text-center"><button class="bg-[black] text-white p-3 rounded-lg w-[120px]">Shop all <i class="fa-solid fa-angle-right"></i></button></div>
+        </div>
+     </div>
+
+     <!-- section 7 -->
+      <div class="part7">
+        <div class="swiper-container h-[100%]">
+            <div class="swiper-wrapper w-[100%]">
+                <div class="swiper-slide" ><img src="assets/sd1.png" alt=""></div>
+                
+                <div class="swiper-slide" > 
+                   <img src="assets/sd2.png" alt="">
+                </div>
+                
+                <div class="swiper-slide" >
+                   <img src="assets/sd3.png" alt="" class="h-full w-full">
+                </div>
+                
+                <div class="swiper-slide" >
+                    <img src="assets/sd4.png" alt="" class="h-full w-full">
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- section 8 -->
+       <div class="part8">
+        <div class="f p-[50px] text-center">
+            <h1 class="text-4xl font-bold" style="color: #212529;">Shop by Price</h1>
+            <p class="text-lg mt-3 mb-4">Find affordable frames to fit your budget and style.</p>
+            <button>$6.95 <i class="fa-solid fa-angle-right"></i></button>
+            <button>Under $20 <i class="fa-solid fa-angle-right"></i></button>
+            <button>Under $30 <i class="fa-solid fa-angle-right"></i></button>
+            <button>Sale <i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        <div class="f1">
+            <img src="assets/offer.png" alt="">
+        </div>
+       </div>
+
+       <!-- section 9 -->
+        <div class="part9 p-[20px]">
+            <div class="g flex h-full">
+                <div class="g1 bg-[#FAFAFA] p-[40px] w-[50%] h-full">
+                    <img src="assets/logo-small.png" alt="" class="h-[30px]"><br>
+                    <h1 class="font-bold text-4xl">Eyewear for everyone™</h1><br>
+                    <p>At Zenni, we believe stylish, high-quality prescribed glasses should be accessible to all. As a leading online glasses company since 2003, we've designed, manufactured, and packaged every pair of glasses in-house to ensure exceptional craftsmanship at affordable prices. We are dedicated to providing affordable eyeglasses for every budget, ensuring that quality is never sacrificed. We take pride in offering one of the largest selections of frames and customization options online, empowering our customers to personalize their eyewear to truly reflect their unique style and vision needs. With over 50 million low-cost eyeglasses sold, we continue to innovate and remain committed to making prescribed glasses online convenient and vision care accessible for a brighter future. Conveniently order your eye glasses online and experience the Zenni difference</p>
+                    <br>
+                    <button class="text-black p-3 border border-black rounded-lg font-bold hover:bg-[#03424C] hover:text-white">About Us <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="g2 p-[5%] bg-[#03424C] text-center text-white w-[50%] h-full flex flex-col justify-center items-center">
+                    <h1 class="font-bold text-2xl">Support Kids’ Mental Health</h1><br>
+                    <p>This October, Zenni will donate all proceeds from the Vision of Wellness frames to Bring Change to Mind, supporting children's mental well-being.</p><br>
+                    <button class="text-white p-3 border border-whiter rounded-lg font-bold  hover:bg-white hover:text-[#03424C]" >Learn More <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- section 10 -->
+         <div class="part10 p-[20px] text-center">
+            <h1 class="font-bold text-3xl">Get 10% off your first order</h1>
+            <p class="ms-5 text-[gray] text-lg"> Sign up now for exclusive news and savings</p><br>
+            <input type="text" placeholder="Email Address " class="border p-2 w-[300px]">
+            <button class="text-white bg-[#007b8f] p-2 w-[80px] ms-[-10px] border">sing up</button>
+            <br><br>
+            <p class="text-[gray] text-[12px] mb-4">10% off only applies to full price items. Zenni reserves the right to<br> modify or cancel at any time.</p>
+            <p class="text-[#007b8f] text-500">Privacy Policy & Terms</p>
+            <br>
+            <img src="assets/logo-small.png" alt="" class="h-[20px]"> 
+            <span class="font-bold text-3xl text-[#666666]">Socialize with us</span>
+            <i class="fa-brands fa-facebook-f text-[#007b8f] text-2xl ms-2"></i>
+            <i class="fa-brands fa-pinterest text-[#007b8f] text-2xl ms-2"></i>
+            <i class="fa-brands fa-twitter text-[#007b8f] text-2xl ms-2"></i>
+            <i class="fa-brands fa-instagram text-[#007b8f] text-2xl ms-2"></i>
+            <i class="fa-brands fa-youtube text-[#007b8f] text-2xl ms-2"></i>
+         </div>
+
+         <!-- footer -->
+         <footer class="bg-[#FAFAFA]">
+            <div class="h flex justify-center items-center h-[7vw] border bg-[#F5F5F5]">
+                <img src="assets/logo-small.png" alt="" class="h-[25px]"> 
+                <h1 class="font-bold text-2xl mr-2"> Get the app </h1>
+                <img src="assets/app1.svg" alt="">
+                <img src="assets/app2.png" alt="" class="h-[60px]">
+            </div>
+            <div class="h1 grid grid-cols-3 h-[12vw]">
+                <div class="border h-full p-5 flex">
+                    <h11 class="h-full w-[50%]">
+                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Frequently Asked Questions</h3>
+                        <a href="">Virtual Try-On</a><br>
+                        <a href="">Lenses</a><br>
+                        <a href="">Shipping</a><br>
+                    </h11>
+                    <h11 class="h-full w-[50%] pt-[3vw]">
+                        <a href="">Prescriptions</a><br>
+                        <a href="">Sunglasses</a><br>
+                        <a href="">More</a><br>
+                    </h11>
+                </div>
+                <div class="border h-full p-5 flex">
+                    <h11 class="h-full w-[50%]">
+                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Customer Service</h3>
+                        <a href=""><i class="fa-solid fa-truck fa-xs"></i> Track My Order</a><br>
+                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left fa-xs"></i> Return Information</a><br>
+                        <a href=""><i class="fa-solid fa-barcode fa-xs"></i> Gift Card Balance</a><br>
+                    </h11>
+                    <h11 class="h-full w-[50%] pt-[3vw]">
+                        <a href=""><i class="fa-solid fa-phone fa-xs"></i> Contact Us</a>
+                    </h11>
+                </div>
+                <div class="border h-full p-5 flex">
+                    <h11 class="h-full w-[50%]">
+                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Have a Question?</h3>
+                        <a href="">Visit Our Help Center</a><br>
+                        <a href=""><i class="fa-solid fa-comments fa-xs"></i> Chat Support 24/7</a><br>
+                        <a href=""><i class="fa-solid fa-envelope fa-xs"></i> Email</a><br>
+                    </h11>
+                    <h11 class="h-full w-[50%] pt-[3vw]">
+                       <p class="text-[#666666] text-[14px]">(800) 211-2105<br>
+                        English 5AM – 9PM PT<br>
+                        Español & Français 5AM – 9PM PT</p>
+                    </h11>
+                </div>
+            </div>
+            <div class="h2 grid grid-cols-3 h-[33vw] border">
+                <div class="h-full p-[1vw] flex">
+                    <h22 class="h-full w-[50%]">
+                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Shop All</h3>
+                        <a href="" >All Glasses</a><br>
+                        <a href="" >All Contacts</a><br>
+                        <a href="" >All Women's Glasses</a><br>
+                        <a href="">All Men's Glasses</a><br>
+                        <a href="">All Kids' Glasses</a><br>
+                        <a href="">All Sunglasses</a><br>
+                        <a href="">All Prescription Sunglasses</a><br>
+                        <a href="">All Women's Sunglasses</a><br>
+                        <a href="">All Men's Sunglasses</a><br>
+                        <a href="">All Kids' Sunglasses</a><br>
+                        <a href="">New Arrivals</a><br>
+                        <a href="">Rush Delivery</a><br>
+                    </h22>
+                    <h22 class="h-full w-[50%]">
+                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Shop Brands</h3>
+                        <a href="">    Shop All</a><br>
+                        <a href="">Adidas</a><br>
+                        <a href="">Jimmy Choo</a><br>
+                        <a href="">Kate Spade</a><br>
+                        <a href="">Marc Jacobs</a><br>
+                        <a href="">Guess</a><br>
+                        <a href="">Disney</a><br>
+                        <a href="">Ferragamo</a><br>
+                        <a href="">Fossil</a><br>
+                        <a href="">Nike</a><br>
+                        <a href="">Under Armour</a><br>
+                        <a href="">Calvin Klein</a><br>
+                        <a href="">Carrera</a><br>
+                    </h22>
+                </div>
+                <div class="h-full p-[1vw] flex">
+                    <h22 class="h-full w-[50%] pr-[10px]">
+                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Infographics</h3>
+                        <a href="">View All</a><br>
+                        <a href="">How to Measure Your PD</a><br>
+                        <a href="">How to Use our Custom Dual PD Ruler</a><br>
+                        <a href="">Best Eyeglasses For Your Face Shape</a><br>
+                        <a href="">How to Measure Your Frame Size</a><br>
+                        <a href="">How to Adjust Your Glasses</a><br>
+                        <a href="">The Hidden Costs You Pay for Glasses</a><br>
+                        <a href="">Lifetime Cost of Wearing Glasses</a><br>
+                    </h22>
+                    <h22 class="h-full w-[50%]">
+                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">How To Videos</h3>
+                        <a href="">View All</a><br>
+                        <a href="">How to Order Your Glasses Online</a><br>
+                        <a href="">How to Measure your PD(Pupillary Distance)</a><br>
+                        <a href="">Choosing the Best Frames for</a><br>
+                        <a href="">Progressives</a><br>
+                        <a href="">How to Adapt to Progressive Lenses</a><br>
+                        <a href="">How to Replace Lenses in a Full-Rim Frame</a><br>
+                        <a href="">How to Replace Lenses in a Half-Rim Frame</a><br>
+                        <a href="">How to Choose your Glasses Tints</a><br>
+                        <a href="">How to Use Store Credit / Gift Card</a><br>
+                      
+                    </h22>
+                </div>
+                <div class="h-full p-[1vw] flex">
+                    <h22 class="h-full w-[50%]">
+                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">About Zenni Optical</h3>
+                        <a href=""> About Us</a><br>
+                        <a href="">Site Map</a><br>
+                        <a href="">Zenni Blog</a><br>
+                        <a href="">Press Room</a><br>
+                        <a href="">Zenni Impact</a><br>
+                        <a href="">Careers</a><br>
+                        <a href="">Our Eyeglass Production Story</a><br>
+                        <a href="">Do Not Sell My Personal</a><br>
+                        <a href="">Information</a><br>
+                        
+                    </h22>
+                    <h22 class="h-full w-[50%]">
+                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Programs</h3>
+                        <a href="">Next Day Contacts</a><br>
+                        <a href="">Loyalty Program</a><br>
+                        <a href="">Zenni Business</a><br>
+                        <a href="">Affiliate Program</a><br>
+                        <a href="">Refer a Friend</a><br>
+                        <a href="">FSA/HSA</a><br>
+                        <a href="">Download Our App</a><br>
+                       
+                    </h22>
+                </div>
+            </div>
+         </footer>
+
+         <!-- contact -->
+          <div class="contact flex flex-col items-center p-[2vw]">
+            <h6 class="flex text-[12px]"><img src="assets/contact-logo.avif" alt="" class="h-[1.2vw]">  <span class="text-[#007B8F] ms-2 mr-5">United States <i class="fa-solid fa-angle-right fa-2xs"></i></span> © COPYRIGHT 2024 ZENNI OPTICAL ®, INC. ALL RIGHTS RESERVED.</h6>
+            <a href="" class="text-[12px] text-[#007B8F] mt-2">Terms of Use
+                |
+                Privacy Policy
+                |
+                California Consumers Privacy Notice
+                |
+                Rights Request Form
+                |
+                Accessibility Statement
+                |
+                Your Privacy Rights</a>
+                <img src="assets/logo-footer.webp" alt=""   >
+          </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

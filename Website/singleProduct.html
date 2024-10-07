@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SingleProduct</title>
+    <link rel="stylesheet" href="css/singalproduct.css">
+     <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- tailwindcss -->
+     <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    
+    <!-- header -->
+    <div class="hedline h-[40px] text-right text-[#007B8F] pr-5 leading-10">Enable Accessibility</div>
+    <header class="flex xl:justify-between items-center ">
+        <span class="navbar-btn block xl:hidden p-[1.5vw]" id="toggle"><i class="fa-solid fa-bars"></i></span>
+        <div class="logo w-[12%] flex justify-center items-center"><a href="index.html"><img src="assets/logo.avif" alt="" class="ms-5"></a></div>
+        <nav class="hidden xl:block w-full xl:w-[43%] h-full">
+            <ul class="flex justify-evenly items-center h-full w-full">
+                <li><a href="">EYEGLASSES</a></li>
+                <li><a href="">SUNGLASSES</a></li>
+                <li><a href="">LANSES</a></li>
+                <li><a href="product.html">COLLECTIONS</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">BRANDS</a></li>
+            </ul>
+        </nav>
+            <div class="search flex justify-center items-center h-full w-[50%] xl:w-[20%]">
+            <input type="text" placeholder="Search glas" id="search" class="w-[90%] xl:w-[90%]"><i class="fa-solid fa-magnifying-glass fa-xl"style="color: #666666;" id="searchIcon"></i>
+        </div>
+            <div class="manu flex items-center xl:itens-none h-full text-[#666666] ms-auto w-[28%]">
+            <div class="imgsearch xl:h-full text-center p-[7px] xl:p-[13px] xl:w-[150px]"><i class="fa-solid fa-camera xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br><span style="background-color: #007B8F;color: white; padding: 5px; border-radius: 20px;" class="text-[7px] xl:text-[12px] hidden xl:block">Visual search</span></div>
+            <div class="login xl:h-full text-center p-[7px] xl:p-[17px]"><a href="creatAccount.html"><i class="fa-solid fa-user xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br> <span class="hidden xl:block">Login</span></a></div>
+            <div class="favorit xl:h-full text-center p-[7px] xl:p-[17px]"><i class="fa-regular fa-heart xl:fa-xl xl:mb-[6px]"style="color: #666666;"></i><br><span class="hidden xl:block"> Favorit</span></div>
+            <div class="help xl:h-full text-center p-[7px] xl:p-[17px]"><i class="fa-solid fa-circle-question xl:fa-xl xl:mb-[6px]"style="color: #666666;"></i><br><span class="hidden xl:block"> Help</span></div>
+            <div class="cart xl:h-full text-center p-[7px] xl:p-[17px]"><a href="Cart.html"><i class="fa-solid fa-cart-shopping xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br><span class="hidden xl:block">Cart</span></a></div>
+        </div>
+    </header>
+    <!-- main -->
+    <div id="product" class="h-[40vw]"></div>
+     <!-- footer -->
+     <footer class="bg-[#FAFAFA]">
+      <div class="h flex justify-center items-center h-[7vw] border bg-[#F5F5F5]">
+          <img src="assets/logo-small.png" alt="" class="h-[25px]"> 
+          <h1 class="font-bold text-2xl mr-2"> Get the app </h1>
+          <img src="assets/app1.svg" alt="">
+          <img src="assets/app2.png" alt="" class="h-[60px]">
+      </div>
+      <div class="h1 grid grid-cols-3 h-[12vw]">
+          <div class="border h-full p-5 flex">
+              <h11 class="h-full w-[50%]">
+                  <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Frequently Asked Questions</h3>
+                  <a href="">Virtual Try-On</a><br>
+                  <a href="">Lenses</a><br>
+                  <a href="">Shipping</a><br>
+              </h11>
+              <h11 class="h-full w-[50%] pt-[3vw]">
+                  <a href="">Prescriptions</a><br>
+                  <a href="">Sunglasses</a><br>
+                  <a href="">More</a><br>
+              </h11>
+          </div>
+          <div class="border h-full p-5 flex">
+              <h11 class="h-full w-[50%]">
+                  <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Customer Service</h3>
+                  <a href=""><i class="fa-solid fa-truck fa-xs"></i> Track My Order</a><br>
+                  <a href=""><i class="fa-solid fa-arrow-right-arrow-left fa-xs"></i> Return Information</a><br>
+                  <a href=""><i class="fa-solid fa-barcode fa-xs"></i> Gift Card Balance</a><br>
+              </h11>
+              <h11 class="h-full w-[50%] pt-[3vw]">
+                  <a href=""><i class="fa-solid fa-phone fa-xs"></i> Contact Us</a>
+              </h11>
+          </div>
+          <div class="border h-full p-5 flex">
+              <h11 class="h-full w-[50%]">
+                  <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Have a Question?</h3>
+                  <a href="">Visit Our Help Center</a><br>
+                  <a href=""><i class="fa-solid fa-comments fa-xs"></i> Chat Support 24/7</a><br>
+                  <a href=""><i class="fa-solid fa-envelope fa-xs"></i> Email</a><br>
+              </h11>
+              <h11 class="h-full w-[50%] pt-[3vw]">
+                 <p class="text-[#666666] text-[14px]">(800) 211-2105<br>
+                  English 5AM – 9PM PT<br>
+                  Español & Français 5AM – 9PM PT</p>
+              </h11>
+          </div>
+      </div>
+      <div class="h2 grid grid-cols-3 h-[33vw] border">
+          <div class="h-full p-[1vw] flex">
+              <h22 class="h-full w-[50%]">
+                  <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Shop All</h3>
+                  <a href="" >All Glasses</a><br>
+                  <a href="" >All Contacts</a><br>
+                  <a href="" >All Women's Glasses</a><br>
+                  <a href="">All Men's Glasses</a><br>
+                  <a href="">All Kids' Glasses</a><br>
+                  <a href="">All Sunglasses</a><br>
+                  <a href="">All Prescription Sunglasses</a><br>
+                  <a href="">All Women's Sunglasses</a><br>
+                  <a href="">All Men's Sunglasses</a><br>
+                  <a href="">All Kids' Sunglasses</a><br>
+                  <a href="">New Arrivals</a><br>
+                  <a href="">Rush Delivery</a><br>
+              </h22>
+              <h22 class="h-full w-[50%]">
+                  <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Shop Brands</h3>
+                  <a href="">    Shop All</a><br>
+                  <a href="">Adidas</a><br>
+                  <a href="">Jimmy Choo</a><br>
+                  <a href="">Kate Spade</a><br>
+                  <a href="">Marc Jacobs</a><br>
+                  <a href="">Guess</a><br>
+                  <a href="">Disney</a><br>
+                  <a href="">Ferragamo</a><br>
+                  <a href="">Fossil</a><br>
+                  <a href="">Nike</a><br>
+                  <a href="">Under Armour</a><br>
+                  <a href="">Calvin Klein</a><br>
+                  <a href="">Carrera</a><br>
+              </h22>
+          </div>
+          <div class="h-full p-[1vw] flex">
+              <h22 class="h-full w-[50%] pr-[10px]">
+                  <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Infographics</h3>
+                  <a href="">View All</a><br>
+                  <a href="">How to Measure Your PD</a><br>
+                  <a href="">How to Use our Custom Dual PD Ruler</a><br>
+                  <a href="">Best Eyeglasses For Your Face Shape</a><br>
+                  <a href="">How to Measure Your Frame Size</a><br>
+                  <a href="">How to Adjust Your Glasses</a><br>
+                  <a href="">The Hidden Costs You Pay for Glasses</a><br>
+                  <a href="">Lifetime Cost of Wearing Glasses</a><br>
+              </h22>
+            
+              <h22 class="h-full w-[50%]">
+                  <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">How To Videos</h3>
+                  <a href="">View All</a><br>
+                  <a href="">How to Order Your Glasses Online</a><br>
+                  <a href="">How to Measure your PD(Pupillary Distance)</a><br>
+                  <a href="">Choosing the Best Frames for</a><br>
+                  <a href="">Progressives</a><br>
+                  <a href="">How to Adapt to Progressive Lenses</a><br>
+                  <a href="">How to Replace Lenses in a Full-Rim Frame</a><br>
+                  <a href="">How to Replace Lenses in a Half-Rim Frame</a><br>
+                  <a href="">How to Choose your Glasses Tints</a><br>
+                  <a href="">How to Use Store Credit / Gift Card</a><br>
+                
+              </h22>
+          </div>
+          <div class="h-full p-[1vw] flex">
+              <h22 class="h-full w-[50%]">
+                  <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">About Zenni Optical</h3>
+                  <a href=""> About Us</a><br>
+                  <a href="">Site Map</a><br>
+                  <a href="">Zenni Blog</a><br>
+                  <a href="">Press Room</a><br>
+                  <a href="">Zenni Impact</a><br>
+                  <a href="">Careers</a><br>
+                  <a href="">Our Eyeglass Production Story</a><br>
+                  <a href="">Do Not Sell My Personal</a><br>
+                  <a href="">Information</a><br>
+                  
+              </h22>
+              <h22 class="h-full w-[50%]">
+                  <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Programs</h3>
+                  <a href="">Next Day Contacts</a><br>
+                  <a href="">Loyalty Program</a><br>
+                  <a href="">Zenni Business</a><br>
+                  <a href="">Affiliate Program</a><br>
+                  <a href="">Refer a Friend</a><br>
+                  <a href="">FSA/HSA</a><br>
+                  <a href="">Download Our App</a><br>
+                 
+              </h22>
+          </div>
+      </div>
+   </footer>
+
+   <!-- contact -->
+    <div class="contact flex flex-col items-center p-[2vw]">
+      <h6 class="flex text-[12px]"><img src="assets/contact-logo.avif" alt="" class="h-[1.2vw]">  <span class="text-[#007B8F] ms-2 mr-5">United States <i class="fa-solid fa-angle-right fa-2xs"></i></span> © COPYRIGHT 2024 ZENNI OPTICAL ®, INC. ALL RIGHTS RESERVED.</h6>
+      <a href="" class="text-[12px] text-[#007B8F] mt-2">Terms of Use
+          |
+          Privacy Policy
+          |
+          California Consumers Privacy Notice
+          |
+          Rights Request Form
+          |
+          Accessibility Statement
+          |
+          Your Privacy Rights</a>
+          <img src="assets/logo-footer.webp" alt=""   >
+    </div>
+    <script src="js/singleProduct.js"></script>
+  </body>
+</html>

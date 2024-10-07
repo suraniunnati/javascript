@@ -1,0 +1,92 @@
+header{
+    height: 71px;
+    border: 1px solid #acacac;
+}
+header .logo{
+    height: 100%;
+    border-right: 1px solid #acacac;
+}
+header .logo img{
+    height: 35%;
+    width: 70%;
+}
+header nav ul li{
+    list-style: none;
+    /* border: 1px solid black; */
+    line-height: 70px;
+    height: 100%;
+    position: relative;
+}
+header nav ul li::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #007B8F;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header nav ul li:hover::before{
+    width: 100%;
+    transition: 1s;
+}
+
+header nav ul li:hover{
+    /* border: 1px solid #d0d0d0; */
+    background-color: #efefef;
+    color: #007B8F;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:#666666;
+    padding: 10px;
+    font-family: Sons, Helvetica, Arial, sans-serif;
+    
+}
+header .search{
+    position: relative;
+}
+header #search{
+    height: 80%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+}
+header .search #searchIcon{
+    position: absolute;
+    right: 10%;
+}
+header .manu .login,.favorit,.help,.cart{
+    border-left: 1px solid #acacac;
+}
+
+table{
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+table tr th{
+    width: 300px;
+    height: 50px;
+}
+table tr{
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+table tr td{
+    height: 150px;
+    font-size: 18px;
+}
+table img{
+    padding: 20px;
+}
+table button{
+    background-color: #007B8F;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 10px;
+}
+footer a{
+    color: #007B8F;
+    font-weight: 450;   
+}

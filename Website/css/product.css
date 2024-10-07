@@ -1,0 +1,115 @@
+header{
+    height: 71px;
+    border: 1px solid #acacac;
+}
+header .logo{
+    height: 100%;
+    border-right: 1px solid #acacac;
+}
+header .logo img{
+    height: 35%;
+    width: 70%;
+}
+header nav ul li{
+    list-style: none;
+    /* border: 1px solid black; */
+    line-height: 70px;
+    height: 100%;
+    position: relative;
+}
+header nav ul li::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #007B8F;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header nav ul li:hover::before{
+    width: 100%;
+    transition: 1s;
+}
+
+header nav ul li:hover{
+    /* border: 1px solid #d0d0d0; */
+    background-color: #efefef;
+    color: #007B8F;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:#666666;
+    padding: 10px;
+    font-family: Sons, Helvetica, Arial, sans-serif;
+    
+}
+header .search{
+    position: relative;
+}
+header #search{
+    height: 80%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+}
+header .search #searchIcon{
+    position: absolute;
+    right: 10%;
+}
+header .manu .login,.favorit,.help,.cart{
+    border-left: 1px solid #acacac;
+}
+#box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+img {
+  height: 100px;
+}
+#image {
+  width: 100%;
+  background-color: white;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 #eaf7ff;
+}
+#main {
+  /* border: 1px solid black; */
+  background-color: #fafdff;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 rgb(230, 230, 230);
+}
+
+#text{
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+}
+#text i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.side2::-webkit-scrollbar {
+    width: 0%;
+  }
+  .side::-webkit-scrollbar {
+    width: 5px;
+  }
+  .side::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  .side::-webkit-scrollbar-thumb {
+    background: rgb(232, 232, 232);
+    border-radius: 10px;
+  }
+  footer a{
+    color: #007B8F;
+    font-weight: 450;   
+}

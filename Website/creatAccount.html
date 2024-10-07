@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creataccount</title>
+    <style>
+        header .logo img{
+    height: 35%;
+    width: 60%;
+}
+.title button{
+    position: relative;
+    color: #666666;
+}
+.title button::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #007B8F;
+    transition: 1s;
+}
+.title button:hover::before{
+    width: 100%;
+}
+.title button:hover{
+    color: #007B8F;
+}
+input:hover{
+    border: 2px solid #007B8F;
+    color: #007B8F;
+}
+#createAccount{
+    display: none   ; 
+}
+
+    </style>
+    
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+       <!-- font-awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="hedline h-[40px] text-right text-[#007B8F] pr-5 leading-10 border-b">Enable Accessibility</div>
+    <header class="flex justify-between items-center h-[60px]">
+        <div class="logo w-[15%] flex justify-center items-center"><a href="index.html" ><img src="assets/logo.avif" alt="" class="ms-5"></a></div>
+        <div class="cart h-full w-[5%] text-center p-[17px]"><a href="Cart.html"><i class="fa-solid fa-cart-shopping fa-lg" style="color: #007B8F;"></i></a></div>
+    </header>
+
+    <div class="main h-[50vw] flex justify-center items-center">
+        <div class="creat bg-[#FAFAFA] h-[90%] w-[55%]">
+            <div class="title h-[3vw] flex mb-[3vw]">
+                <button class="w-[50%] h-full text-[1.3vw] font-semibold" id="signin">SIGN IN</button>
+                <button class="w-[50%] h-full text-[1.3vw] font-semibold" id="accountcreate">CREATE ACCOUNT</button>
+            </div>
+            <div id="createAccount" class="h-[80%] p-[2vw]">
+                <form action="" id="creataccountmain">
+                <h2 class="text-center text-[#666666] font-semibold text-xl"> sign up with your email</h2>
+
+                <input type="text" placeholder="First name" class="h-[50px] w-[100%] mt-[1vw] border ps-4" id="username">
+                <span id="usernameText" class="text-[red]"></span>
+                <input type="text" placeholder="Last name" class="h-[50px] w-[100%] mt-[1vw] border ps-4">
+                <input type="text" id="email" placeholder="Email(your@email.com)" class="h-[50px] w-[100%] mt-[1vw] border ps-4">
+                <span id="emailText" class="text-[red]"></span>
+                <input type="text" id="password" placeholder="Password" class="h-[50px] w-[100%] mt-[1vw] border ps-4">
+                <span id="passwordText" class="text-[red]"></span>
+                <br><br>
+                <input type="checkbox" class="mt-[1vw]"><span class="text-[#666666]"> I Agree to receive news and exclusive offers from Zenni Optical.</span><br>
+                <input type="checkbox" class="mt-[1vw]"
+            > <span class="text-[#666666] font-bold">Join Zenni Rewards <i class="fa-solid fa-question" style="color: #018e7e;"></i></span><br>
+                <p class="text-[#666666]">Yes, I want to join Zenni Rewards, reside in the U.S, and agree to the Rewards</p>
+                <button class="h-[50px] w-[100%] mt-[1vw] border ps-4 bg-[#666666] hover:bg-[#007b8f] text-white font-bold">CREATE ACCOUNT</button>
+            </form>
+            </div>
+
+            <div id="signIn" class="h-[80%] p-[2vw]">
+                <form action="" id="signInmain">
+                <input type="text" placeholder="Email(your@email.com)" id="loginEmail" class="h-[50px] w-[100%] mt-[1vw] border ps-4">
+                <input type="text" placeholder="Password" id="loginPassword" class="h-[50px] w-[100%] mt-[1vw] border ps-4"><br><br>
+                <input type="checkbox" class="mt-[1vw]"><span class="text-[#666666]"> Remember me</span><br>
+                <input type="checkbox" class="mt-[1vw]"> <span class="text-[#666666] font-bold">Join Zenni Rewards <i class="fa-solid fa-question" style="color: #018e7e;"></i></span><br>
+                <p class="text-[#666666] mt-[1vw]">Yes, I want to join Zenni Rewards, reside in the U.S, and agree to the Rewards</p>
+                <button class="h-[50px] w-[100%] mt-[1vw] border ps-4 bg-[#666666] hover:bg-[#007b8f] text-white font-bold">SIGN IN</button><br>
+                <h1 class="text-center font-bold mt-[1vw] text-[#007b8f]">Forgot password?</h1>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/creataccout.js"></script>
+</body>
+</html>
