@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE API</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="assets/logo.png" alt=""></div>
+        <div class="search">
+            <h1>Unlimited movies,series</h1><br>
+            <p>Ready to watch ? search Name like to seen today !!</p><br>
+            <input type="text" id="search" placeholder="Search...">
+            <select name="" id="select">
+                <option value="">All</option>
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">episode</option>
+            </select>
+        </div>
+        <div class="manu">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-bell"></i>
+            <a href="login.html"><button id="login">login</button></a>
+        </div>
+    
+   
+</header>
+<div class="main">
+    <h3>Trending Now <i class="fa-solid fa-circle-arrow-right"></i></h3>
+    <div id="box"></div>
+</div>
+  
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
