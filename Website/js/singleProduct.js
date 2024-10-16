@@ -2,7 +2,7 @@ function singleProduct() {
   let data = new URLSearchParams(window.location.search);
   let id = data.get("id");
 
-  fetch(`http://localhost:3000/product?id=${id}`)
+  fetch(`https://render-js01.onrender.com/product?id=${id}`)
     .then((r) => {
       return r.json();
     })
@@ -57,7 +57,7 @@ Learn More</P>
 
 function Addcart(res){
 
-  fetch(`http://localhost:3000/AddCart?id=${res[0].id}`)
+  fetch(`https://render-js01.onrender.com/AddCart?id=${res[0].id}`)
   .then((r)=>{
     return r.json()
   })
@@ -66,14 +66,18 @@ function Addcart(res){
       alert("Item is Already Present in Cart !!!!!")
     }
     else{
-      fetch(`http://localhost:3000/AddCart`,
+      fetch(`https://render-js01.onrender.com/AddCart`,
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
           },
-          body: JSON.stringify(res[0])
+          body: JSON.stringify({...res[0],quantity : 1})
         })
+        .then((r)=>r.json())
+        .then((res)=>
+          console.log(res),
+           alert("Item is Successfully add in Cart !!!!!"))
       }  
   })
   .catch((err)=>{

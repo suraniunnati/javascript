@@ -36,6 +36,17 @@ input:hover{
 #createAccount{
     display: none   ; 
 }
+#total{
+    border-radius: 50%;
+    font-size: 10px;
+    height: 16px;
+    width: 16px;
+    background-color: #666666;
+    color: white;
+    position: absolute;
+    top: 7%;
+    right: 20px;
+}
 
     </style>
     
@@ -47,9 +58,10 @@ input:hover{
 </head>
 <body>
     <div class="hedline h-[40px] text-right text-[#007B8F] pr-5 leading-10 border-b">Enable Accessibility</div>
+    <!-- header -->
     <header class="flex justify-between items-center h-[60px]">
         <div class="logo w-[15%] flex justify-center items-center"><a href="index.html" ><img src="assets/logo.avif" alt="" class="ms-5"></a></div>
-        <div class="cart h-full w-[5%] text-center p-[17px]"><a href="Cart.html"><i class="fa-solid fa-cart-shopping fa-lg" style="color: #007B8F;"></i></a></div>
+        <div class="cart h-full w-[5%] text-center p-[17px]"><a href="Cart.html"><i class="fa-solid fa-cart-shopping fa-lg" style="color: #007B8F;"></i><p id="total"></p></a></div>
     </header>
 
     <div class="main h-[50vw] flex justify-center items-center">
@@ -94,5 +106,6 @@ input:hover{
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/creataccout.js"></script>
+    <script src="js/carttotal.js"></script>
 </body>
 </html>

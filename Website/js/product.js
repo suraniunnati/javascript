@@ -1,5 +1,5 @@
 function productData() {
-  fetch(`http://localhost:3000/product`)
+  fetch(`https://render-js01.onrender.com/product`)
     .then((r) => {
       return r.json();
     })

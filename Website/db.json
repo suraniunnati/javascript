@@ -1,18 +1,5 @@
 {
-  "user": [
-    {
-      "id": "e106",
-      "username": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "335c",
-      "username": "",
-      "email": "",
-      "password": ""
-    }
-  ],
+  "user": [],
   "product": [
     {
       "id": "1",
@@ -58,11 +45,6 @@
     }
   ],
   "AddCart": [
-    {
-      "id": "6",
-      "url": "https://static.zennioptical.com/production/products/general/99/11/99110625-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
-      "price": 25.95,
-      "title": "Champion"
-    }
+   
   ]
 }

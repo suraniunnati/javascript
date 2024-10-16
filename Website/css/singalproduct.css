@@ -47,7 +47,7 @@ header .search{
     position: relative;
 }
 header #search{
-    height: 80%;
+    height: 70%;
     border-radius: 30px;
     padding: 10px;
     border: 1px solid #d1d1d1;
@@ -58,6 +58,18 @@ header .search #searchIcon{
 }
 header .manu .login,.favorit,.help,.cart{
     border-left: 1px solid #acacac;
+    position: relative;
+}
+#total{
+    border-radius: 50%;
+    font-size: 10px;
+    height: 16px;
+    width: 16px;
+    background-color:#007B8F;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 #main {
     height: 100%;

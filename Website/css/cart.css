@@ -47,7 +47,7 @@ header .search{
     position: relative;
 }
 header #search{
-    height: 80%;
+    height: 70%;
     border-radius: 30px;
     padding: 10px;
     border: 1px solid #d1d1d1;
@@ -58,15 +58,26 @@ header .search #searchIcon{
 }
 header .manu .login,.favorit,.help,.cart{
     border-left: 1px solid #acacac;
+    position: relative;
 }
-
+#total{
+    border-radius: 50%;
+    font-size: 10px;
+    height: 16px;
+    width: 16px;
+    background-color:#007B8F;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
 table{
     width: 800px;
     text-align: center;
     padding: 20px;
 }
 table tr th{
-    width: 300px;
+    width: 330px;
     height: 50px;
 }
 table tr{
@@ -76,15 +87,27 @@ table tr td{
     height: 150px;
     font-size: 18px;
 }
+table tr td #quan{
+    width: 60px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgb(232, 230, 230);
+}
 table img{
     padding: 20px;
 }
-table button{
+table #delete{
     background-color: #007B8F;
     color: white;
     font-size: 14px;
     padding: 8px;
     border-radius: 10px;
+    width: 80px;
+}
+
+table #add{
+   
+    width: 30px;
+    background-color: #dedede;
 }
 footer a{
     color: #007B8F;
