@@ -1,0 +1,17 @@
+{
+  "prduct": [
+    {
+      "id": "2",
+      "title": "black bag",
+      "url": "https://rukminim2.flixcart.com/image/850/1000/xif0q/bag/9/x/k/41-acr101-school-backpack-college-bag-travel-bag-30-my-sack-30-original-imagmpz7pdrptzm5.jpeg?q=20&crop=false",
+      "price": "3000"
+    },
+    {
+      "id": "1",
+      "title": "bag",
+      "url": "https://shop.imgacademy.com/cdn/shop/products/newroyalbackpacks.jpg?v=1653333565",
+      "price": "2000"
+    }
+  ],
+  "cart": []
+}

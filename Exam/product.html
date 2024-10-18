@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <style>
+        body{
+            background-image: url("https://img.freepik.com/free-vector/blue-abstract-gradient-wave-vector-background_53876-111548.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main{
+            height: 300px;
+            width: 500px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            box-shadow: 0 0 10px 0 rgb(173, 172, 172);
+            background-image: url("https://storage.needpix.com/rsynced_images/blue-1273089_1280.jpg");
+        }
+        form input{
+            width: 80%;
+            margin-bottom: 15px;
+            height: 25px;
+            padding-left: 20px;
+            border-radius: 10px;
+            background-color: white;
+            border: none;
+            box-shadow: 0 0 10px 0 rgb(213, 213, 213);
+        }
+        #box{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 40px;
+        }
+        #main{
+            /* border: 1px solid black; */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgb(199, 199, 199);
+            background-color: white;
+        }
+      a{
+            text-decoration: none;
+            color: black;
+        }
+        #img img{
+            width: 200px;
+            height: 180px;
+            border-radius: 10px;
+            margin-left: 10px;
+           
+        }
+        #off{
+            background-color: rgba(0, 128, 0, 0.288);
+            border: none;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    
+        <h3>PRODUCT DETAILS </h3>
+        <form action="" id="detail">
+            <input type="text" id="id" placeholder="product id">
+            <input type="text" id="title" placeholder="product name"><br>
+            <input type="text" id="imgurl" placeholder="image url"><br>
+            <input type="text" id="price" placeholder="product price"><br>
+            <input type="submit">
+        </form>
+
+    </div>
+    <br><br>
+    <div id="box"></div>
+    <script src="js/product.js"></script>
+</body>
+</html>
