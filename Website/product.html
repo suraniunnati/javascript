@@ -17,9 +17,9 @@
   <body>
     <!-- header -->
     <div class="hedline h-[40px] text-right text-[#007B8F] pr-5 leading-10">Enable Accessibility</div>
-    <header class="flex xl:justify-between items-center ">
+    <header class="wow animate__animated animate__bounce flex xl:justify-between items-center ">
         <span class="navbar-btn block xl:hidden p-[1.5vw]" id="toggle"><i class="fa-solid fa-bars"></i></span>
-        <div class="logo w-[12%] flex justify-center items-center"><a href="index.html"><img src="assets/logo.avif" alt="" class="ms-5"></a></div>
+        <div class="logo w-[12%] flex justify-center items-center"><img src="assets/logo.avif" alt=""></div>
         <nav class="hidden xl:block w-full xl:w-[43%] h-full">
             <ul class="flex justify-evenly items-center h-full w-full">
                 <li><a href="">EYEGLASSES</a></li>
@@ -30,10 +30,10 @@
                 <li><a href="">BRANDS</a></li>
             </ul>
         </nav>
-            <div class="search flex justify-center items-center h-full w-[50%] xl:w-[20%]">
+            <div class="search hidden sm:flex justify-center items-center h-full  w-[50%] xl:w-[20%]">
             <input type="text" placeholder="Search glas" id="search" class="w-[90%] xl:w-[90%]"><i class="fa-solid fa-magnifying-glass fa-xl"style="color: #666666;" id="searchIcon"></i>
         </div>
-            <div class="manu flex items-center xl:itens-none h-full text-[#666666] ms-auto w-[28%]">
+            <div class="manu flex items-center xl:itens-none h-full text-[#666666] ms-auto w-[48%] sm:w-[28%]">
             <div class="imgsearch xl:h-full text-center p-[7px] xl:p-[13px] xl:w-[150px]"><i class="fa-solid fa-camera xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br><span style="background-color: #007B8F;color: white; padding: 4px; border-radius: 20px;" class="text-[7px] xl:text-[12px] hidden xl:block">Visual search</span></div>
             <div class="login xl:h-full text-center p-[7px] xl:p-[17px]"><a href="creatAccount.html"><i class="fa-solid fa-user xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br> <span class="hidden xl:block">Login</span></a></div>
             <div class="favorit xl:h-full text-center p-[7px] xl:p-[17px]"><i class="fa-regular fa-heart xl:fa-xl xl:mb-[6px]"style="color: #666666;"></i><br><span class="hidden xl:block"> Favorit</span></div>
@@ -41,8 +41,11 @@
             <div class="cart xl:h-full text-center p-[7px] xl:p-[17px]"><a href="Cart.html"><i class="fa-solid fa-cart-shopping xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br><span class="hidden xl:block">Cart</span><p id="total"></p></a></div>
         </div>
     </header>
+
+    <i class="fa-solid fa-bars me-4" id="aside"></i>
+
     <div class="main flex p-3">
-      <div class="side w-[20%] bg-[#FAFAFA] p-3 h-[60vw] overflow-auto">
+      <div class="side w-[20%] bg-[#FAFAFA] p-3 h-[60vw] overflow-auto" id="slid">
         <h1 class="font-bold text-2xl">Filters</h1>
         <br>
         <hr>
@@ -88,18 +91,18 @@
      
     </div>
    
-  <!-- footer -->
-  <footer class="bg-[#FAFAFA]">
-    <div class="h flex justify-center items-center h-[7vw] border bg-[#F5F5F5]">
-        <img src="assets/logo-small.png" alt="" class="h-[25px]"> 
-        <h1 class="font-bold text-2xl mr-2"> Get the app </h1>
-        <img src="assets/app1.svg" alt="">
-        <img src="assets/app2.png" alt="" class="h-[60px]">
+   <!-- footer -->
+   <footer class="bg-[#FAFAFA]">
+    <div class="wow animate__animated animate__zoomIn h flex  justify-center items-center xl:h-[7vw] border bg-[#F5F5F5]">
+        <img src="assets/logo-small.png" alt="" class="h-[25px] xl:text-[auto]"> 
+        <h1 class="font-bold text-2xl mr-2 text-[10px]"> Get the app </h1>
+        <img src="assets/app1.svg" alt="" class="h-[20px]">
+        <img src="assets/app2.png" alt="" class="h-[30px] xl:h-[60px]">
     </div>
-    <div class="h1 grid grid-cols-3 h-[12vw]">
+    <div class="h1 grid grid-cols-1 xl:grid-cols-3 xl:h-[12vw]">
         <div class="border h-full p-5 flex">
             <h11 class="h-full w-[50%]">
-                <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Frequently Asked Questions</h3>
+                <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Frequently Asked Questions</h3>
                 <a href="">Virtual Try-On</a><br>
                 <a href="">Lenses</a><br>
                 <a href="">Shipping</a><br>
@@ -112,7 +115,7 @@
         </div>
         <div class="border h-full p-5 flex">
             <h11 class="h-full w-[50%]">
-                <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Customer Service</h3>
+                <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Customer Service</h3>
                 <a href=""><i class="fa-solid fa-truck fa-xs"></i> Track My Order</a><br>
                 <a href=""><i class="fa-solid fa-arrow-right-arrow-left fa-xs"></i> Return Information</a><br>
                 <a href=""><i class="fa-solid fa-barcode fa-xs"></i> Gift Card Balance</a><br>
@@ -123,7 +126,7 @@
         </div>
         <div class="border h-full p-5 flex">
             <h11 class="h-full w-[50%]">
-                <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Have a Question?</h3>
+                <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Have a Question?</h3>
                 <a href="">Visit Our Help Center</a><br>
                 <a href=""><i class="fa-solid fa-comments fa-xs"></i> Chat Support 24/7</a><br>
                 <a href=""><i class="fa-solid fa-envelope fa-xs"></i> Email</a><br>
@@ -135,10 +138,10 @@
             </h11>
         </div>
     </div>
-    <div class="h2 grid grid-cols-3 h-[33vw] border">
-        <div class="h-full p-[1vw] flex">
-            <h22 class="h-full w-[50%]">
-                <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Shop All</h3>
+    <div class="h2 grid grid-cols-1 xl:grid-cols-3 xl:h-[33vw] border">
+        <div class="h-full p-[1vw] xl:flex">
+            <h22 class="h-full xl:w-[50%]">
+                <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Shop All</h3>
                 <a href="" >All Glasses</a><br>
                 <a href="" >All Contacts</a><br>
                 <a href="" >All Women's Glasses</a><br>
@@ -152,8 +155,8 @@
                 <a href="">New Arrivals</a><br>
                 <a href="">Rush Delivery</a><br>
             </h22>
-            <h22 class="h-full w-[50%]">
-                <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Shop Brands</h3>
+            <h22 class="h-full xl:w-[50%]">
+                <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Shop Brands</h3>
                 <a href="">    Shop All</a><br>
                 <a href="">Adidas</a><br>
                 <a href="">Jimmy Choo</a><br>
@@ -169,9 +172,9 @@
                 <a href="">Carrera</a><br>
             </h22>
         </div>
-        <div class="h-full p-[1vw] flex">
-            <h22 class="h-full w-[50%] pr-[10px]">
-                <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Infographics</h3>
+        <div class="h-full p-[1vw] xl:flex">
+            <h22 class="h-full xl:w-[50%] pr-[10px]">
+                <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Infographics</h3>
                 <a href="">View All</a><br>
                 <a href="">How to Measure Your PD</a><br>
                 <a href="">How to Use our Custom Dual PD Ruler</a><br>
@@ -181,8 +184,8 @@
                 <a href="">The Hidden Costs You Pay for Glasses</a><br>
                 <a href="">Lifetime Cost of Wearing Glasses</a><br>
             </h22>
-            <h22 class="h-full w-[50%]">
-                <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">How To Videos</h3>
+            <h22 class="h-full xl:w-[50%]">
+                <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">How To Videos</h3>
                 <a href="">View All</a><br>
                 <a href="">How to Order Your Glasses Online</a><br>
                 <a href="">How to Measure your PD(Pupillary Distance)</a><br>
@@ -196,9 +199,9 @@
               
             </h22>
         </div>
-        <div class="h-full p-[1vw] flex">
-            <h22 class="h-full w-[50%]">
-                <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">About Zenni Optical</h3>
+        <div class="h-full p-[1vw] xl:flex">
+            <h22 class="h-full xl:w-[50%]">
+                <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">About Zenni Optical</h3>
                 <a href=""> About Us</a><br>
                 <a href="">Site Map</a><br>
                 <a href="">Zenni Blog</a><br>
@@ -210,8 +213,8 @@
                 <a href="">Information</a><br>
                 
             </h22>
-            <h22 class="h-full w-[50%]">
-                <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Programs</h3>
+            <h22 class="h-full xl:w-[50%]">
+                <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Programs</h3>
                 <a href="">Next Day Contacts</a><br>
                 <a href="">Loyalty Program</a><br>
                 <a href="">Zenni Business</a><br>
@@ -243,5 +246,13 @@
   </div>
     <script src="js/product.js"></script>
     <script src="js/carttotal.js"></script>
+
+    <script>
+        // aside
+document.getElementById('aside').addEventListener('click', () => {
+    const menu = document.getElementById('slid');
+    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+});
+    </script>
   </body>
 </html>

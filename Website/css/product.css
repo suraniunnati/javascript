@@ -125,3 +125,17 @@ img {
     color: #007B8F;
     font-weight: 450;   
 }
+
+@media(max-width:680px){
+  #aside{
+    display: block;
+}
+ #side{
+    display: none;
+    position: absolute;
+    top: 40px;
+    width: 70%;
+    box-shadow: 0 0 5px 0 rgb(217, 217, 217);
+    z-index: 1;
+}
+}

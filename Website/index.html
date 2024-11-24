@@ -25,6 +25,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
 
+    <link rel="stylesheet" href="css/animate.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 </head>
 <body>
 
@@ -34,7 +40,7 @@
     <button id="top"><img src="https://static.vecteezy.com/system/resources/previews/021/827/971/non_2x/eyewear-logo-with-signal-sign-on-it-vector.jpg" alt=""></button>
     <!-- header -->
     <div class="hedline h-[40px] text-right text-[#007B8F] pr-5 leading-10">Enable Accessibility</div>
-    <header class="flex xl:justify-between items-center ">
+    <header class="wow animate__animated animate__bounce flex xl:justify-between items-center ">
         <span class="navbar-btn block xl:hidden p-[1.5vw]" id="toggle"><i class="fa-solid fa-bars"></i></span>
         <div class="logo w-[12%] flex justify-center items-center"><img src="assets/logo.avif" alt=""></div>
         <nav class="hidden xl:block w-full xl:w-[43%] h-full">
@@ -47,10 +53,10 @@
                 <li><a href="">BRANDS</a></li>
             </ul>
         </nav>
-            <div class="search flex justify-center items-center h-full w-[50%] xl:w-[20%]">
+            <div class="search hidden sm:flex justify-center items-center h-full  w-[50%] xl:w-[20%]">
             <input type="text" placeholder="Search glas" id="search" class="w-[90%] xl:w-[90%]"><i class="fa-solid fa-magnifying-glass fa-xl"style="color: #666666;" id="searchIcon"></i>
         </div>
-            <div class="manu flex items-center xl:itens-none h-full text-[#666666] ms-auto w-[28%]">
+            <div class="manu flex items-center xl:itens-none h-full text-[#666666] ms-auto w-[48%] sm:w-[28%]">
             <div class="imgsearch xl:h-full text-center p-[7px] xl:p-[13px] xl:w-[150px]"><i class="fa-solid fa-camera xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br><span style="background-color: #007B8F;color: white; padding: 4px; border-radius: 20px;" class="text-[7px] xl:text-[12px] hidden xl:block">Visual search</span></div>
             <div class="login xl:h-full text-center p-[7px] xl:p-[17px]"><a href="creatAccount.html"><i class="fa-solid fa-user xl:fa-xl xl:mb-[6px]" style="color: #666666;"></i><br> <span class="hidden xl:block">Login</span></a></div>
             <div class="favorit xl:h-full text-center p-[7px] xl:p-[17px]"><i class="fa-regular fa-heart xl:fa-xl xl:mb-[6px]"style="color: #666666;"></i><br><span class="hidden xl:block"> Favorit</span></div>
@@ -61,11 +67,11 @@
 
     <!-- section 1 -->
      <div class="part1">
-        <div class="a">
+        <div class="a wow animate__animated animate__heartBeat">
             <h1 class="text-4xl font-bold" style="color: #212529;">Eyewear for Everyone</h1>
             <p class="text-lg mt-3">Find affordable frames to fit your budget and style.</p>
         </div>
-        <div class="a1">
+        <div class="a1 wow animate__animated animate__backInDown sm:flex justify-evenly items-center hidden">
             <div class="a-part h-[90%] w-[18%] text-center"><img src="assets/gl1.jpg" alt="" class="w-[70%]"><br>3-5-Days delivery</div>
             <div class="a-part h-[90%] w-[18%] text-center"><img src="assets/gl2.jpg" alt="" class="w-[70%]"><br>Eyedlasses</div>
             <div class="a-part h-[90%] w-[18%] text-center"><img src="assets/gl3.jpg" alt="" class="w-[70%]"><br>Sunglasses</div>
@@ -91,23 +97,23 @@
 </div>
 
 <!-- section 3 -->
- <div class="part3">
-    <div class="c  h-[60%] w-[22%] rounded-lg bg-[#084045] text-white flex justify-center items-center flex-col"><p class="sale bg-[red] p-2 rounded-2xl" >Sale</p><h1 class=" text-2xl font-bold ms-[12%]">BOGO 20% off</h1> <p class="ms-[25%]">Additionl pairs | code:BOGA20</p></div>
+ <div class="part3 xl:flex justify-evenly items-center xl:h-[200px] h-[auto]">
+    <div class="c h-[100px] xl:h-[60%] xl:w-[22%] rounded-lg bg-[#084045] text-white flex justify-center items-center flex-col"><p class="sale bg-[red] p-2 rounded-2xl" >Sale</p><h1 class=" text-2xl font-bold ms-[12%]">BOGO 20% off</h1> <p class="ms-[25%]">Additionl pairs | code:BOGA20</p></div>
 
-    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/TP-Logo-Tricolor-Black-RGB.svg" alt="" class="h-[25px]">150k+ 4.5 Reviews</div>
-    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/shipping.svg" alt="">30-Days Result</div>
-    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/favorites.svg" alt="">Best Customer Service</div>
-    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/medal.svg" alt="">#1 Online Eyewear<br> Retailer</div>
-    <div class="c1 h-[60%] w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/gift.svg" alt="">Zenni Rewards</div>
+    <div class="wow animate__animated animate__backInRight c1  h-[60%] xl:w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/TP-Logo-Tricolor-Black-RGB.svg" alt="" class="h-[25px]">150k+ 4.5 Reviews</div>
+    <div class="wow animate__animated animate__backInRight c1 h-[60%] xl:w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/shipping.svg" alt="">30-Days Result</div>
+    <div class="wow animate__animated animate__backInRight c1 h-[60%] xl:w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/favorites.svg" alt="">Best Customer Service</div>
+    <div class="wow animate__animated animate__backInRight c1 h-[60%] xl:w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/medal.svg" alt="">#1 Online Eyewear<br> Retailer</div>
+    <div class="wow animate__animated animate__backInRight c1 h-[60%] xl:w-[14%] rounded-lg bg-[#FAFAFA] flex justify-center items-center font-bold text-center flex-col"><img src="assets/gift.svg" alt="">Zenni Rewards</div>
  </div>
 
  <!-- section 4 -->
   <div class="part4">
-    <div class="d h-full">
-        <h1 class="text-4xl font-bold mb-2 ms-5">Best Sellers</h1>
-        <a href="">Eyeglasses</a>
-        <a href="">Sunglasses</a>
-        <a href="">Designer Glasses</a>
+    <div class="wow animate__animated animate__backInDown d h-full">
+        <h1 class="text-2xl xl:text-4xl font-bold mb-2 ms-5">Best Sellers</h1>
+        <a href="" class="xl:text-[20px]">Eyeglasses</a>
+        <a href="" class="xl:text-[20px]">Sunglasses</a>
+        <a href="" class="xl:text-[20px]">Designer Glasses</a>
         <button class="rounded-2xl text-center text-white bg-[black]">Shop all <i class="fa-solid fa-angle-right"></i></button>
     </div>
     <div class="d1 flex justify-center p-[20px]">
@@ -216,19 +222,19 @@
             <h1 class="text-4xl font-bold" style="color: #212529;">Shop By Frame Shape</h1>
             <p class="text-lg mt-3">Choose your perfect frames from our stylish colors and patterns.</p>
         </div>
-        <div class="e1 w-full flex">
-            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm1.svg" alt="" class="w-[70%]"><br>Rectangle</div>
-            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm2.svg" alt="" class="w-[70%]"><br>Square</div>
-            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm3.svg" alt="" class="w-[70%]"><br>Round</div>
-            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm4.svg" alt="" class="w-[70%]"><br>Cat-Eye</div>
-            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm5.svg" alt="" class="w-[70%]"><br>Aviator</div>
-            <div class="e-part h-[90%] w-[16%] text-center"><img src="assets/frm6.svg" alt="" class="w-[70%]"><br>Browline</div>
-            <div class="e-part h-[90%] w-[14%] text-center"><button class="bg-[black] text-white p-3 rounded-lg w-[120px]">Shop all <i class="fa-solid fa-angle-right"></i></button></div>
+        <div class="e1 w-full xl:flex hidden">
+            <div class="wow animate__animated animate__bounceInLeft e-part h-[90%] w-[16%] text-center"><img src="assets/frm1.svg" alt="" class="w-[70%]"><br>Rectangle</div>
+            <div class="wow animate__animated animate__bounceInLeft e-part h-[90%] w-[16%] text-center"><img src="assets/frm2.svg" alt="" class="w-[70%]"><br>Square</div>
+            <div class="wow animate__animated animate__bounceInLeft e-part h-[90%] w-[16%] text-center"><img src="assets/frm3.svg" alt="" class="w-[70%]"><br>Round</div>
+            <div class="wow animate__animated animate__bounceInRight e-part h-[90%] w-[16%] text-center"><img src="assets/frm4.svg" alt="" class="w-[70%]"><br>Cat-Eye</div>
+            <div class="wow animate__animated animate__bounceInRight e-part h-[90%] w-[16%] text-center"><img src="assets/frm5.svg" alt="" class="w-[70%]"><br>Aviator</div>
+            <div class="wow animate__animated animate__bounceInRight e-part h-[90%] w-[16%] text-center"><img src="assets/frm6.svg" alt="" class="w-[70%]"><br>Browline</div>
+            <div class="wow animate__animated animate__bounceInRight e-part h-[90%] w-[14%] text-center"><button class="bg-[black] text-white p-3 rounded-lg w-[120px]">Shop all <i class="fa-solid fa-angle-right"></i></button></div>
         </div>
      </div>
 
      <!-- section 7 -->
-      <div class="part7">
+      <div class="part7 xl:h-[400px]">
         <div class="swiper-container h-[100%]">
             <div class="swiper-wrapper w-[100%]">
                 <div class="swiper-slide" ><img src="assets/sd1.png" alt=""></div>
@@ -254,7 +260,7 @@
 
       <!-- section 8 -->
        <div class="part8">
-        <div class="f p-[50px] text-center">
+        <div class="wow animate__animated animate__backInDown f p-3 xl:p-[50px] text-center">
             <h1 class="text-4xl font-bold" style="color: #212529;">Shop by Price</h1>
             <p class="text-lg mt-3 mb-4">Find affordable frames to fit your budget and style.</p>
             <button>$6.95 <i class="fa-solid fa-angle-right"></i></button>
@@ -268,16 +274,16 @@
        </div>
 
        <!-- section 9 -->
-        <div class="part9 p-[20px]">
-            <div class="g flex h-full">
-                <div class="g1 bg-[#FAFAFA] p-[40px] w-[50%] h-full">
+        <div class="part9 p-[20px] h-[auto] xl:h-[550px]">
+            <div class="g xl:flex h-full">
+                <div class="g1 bg-[#FAFAFA] p-2 xl:p-[40px] xl:w-[50%] h-full">
                     <img src="assets/logo-small.png" alt="" class="h-[30px]"><br>
                     <h1 class="font-bold text-4xl">Eyewear for everyone™</h1><br>
                     <p>At Zenni, we believe stylish, high-quality prescribed glasses should be accessible to all. As a leading online glasses company since 2003, we've designed, manufactured, and packaged every pair of glasses in-house to ensure exceptional craftsmanship at affordable prices. We are dedicated to providing affordable eyeglasses for every budget, ensuring that quality is never sacrificed. We take pride in offering one of the largest selections of frames and customization options online, empowering our customers to personalize their eyewear to truly reflect their unique style and vision needs. With over 50 million low-cost eyeglasses sold, we continue to innovate and remain committed to making prescribed glasses online convenient and vision care accessible for a brighter future. Conveniently order your eye glasses online and experience the Zenni difference</p>
                     <br>
                     <button class="text-black p-3 border border-black rounded-lg font-bold hover:bg-[#03424C] hover:text-white">About Us <i class="fa-solid fa-angle-right"></i></button>
                 </div>
-                <div class="g2 p-[5%] bg-[#03424C] text-center text-white w-[50%] h-full flex flex-col justify-center items-center">
+                <div class="g2 p-[5%] bg-[#03424C] text-center text-white xl:w-[50%] h-full flex flex-col justify-center items-center">
                     <h1 class="font-bold text-2xl">Support Kids’ Mental Health</h1><br>
                     <p>This October, Zenni will donate all proceeds from the Vision of Wellness frames to Bring Change to Mind, supporting children's mental well-being.</p><br>
                     <button class="text-white p-3 border border-whiter rounded-lg font-bold  hover:bg-white hover:text-[#03424C]" >Learn More <i class="fa-solid fa-angle-right"></i></button>
@@ -286,16 +292,16 @@
         </div>
 
         <!-- section 10 -->
-         <div class="part10 p-[20px] text-center">
+         <div class="wow animate__animated animate__fadeIn part10 p-2 xl:p-[20px] text-center">
             <h1 class="font-bold text-3xl">Get 10% off your first order</h1>
             <p class="ms-5 text-[gray] text-lg"> Sign up now for exclusive news and savings</p><br>
-            <input type="text" placeholder="Email Address " class="border p-2 w-[300px]">
+            <input type="text" placeholder="Email Address " class="border p-2 xl:w-[300px]">
             <button class="text-white bg-[#007b8f] p-2 w-[80px] ms-[-10px] border">sing up</button>
             <br><br>
             <p class="text-[gray] text-[12px] mb-4">10% off only applies to full price items. Zenni reserves the right to<br> modify or cancel at any time.</p>
             <p class="text-[#007b8f] text-500">Privacy Policy & Terms</p>
             <br>
-            <img src="assets/logo-small.png" alt="" class="h-[20px]"> 
+            <img src="assets/logo-small.png" alt="" class="hidden xl:block h-[20px]"> 
             <span class="font-bold text-3xl text-[#666666]">Socialize with us</span>
             <i class="fa-brands fa-facebook-f text-[#007b8f] text-2xl ms-2"></i>
             <i class="fa-brands fa-pinterest text-[#007b8f] text-2xl ms-2"></i>
@@ -306,16 +312,16 @@
 
          <!-- footer -->
          <footer class="bg-[#FAFAFA]">
-            <div class="h flex justify-center items-center h-[7vw] border bg-[#F5F5F5]">
-                <img src="assets/logo-small.png" alt="" class="h-[25px]"> 
-                <h1 class="font-bold text-2xl mr-2"> Get the app </h1>
-                <img src="assets/app1.svg" alt="">
-                <img src="assets/app2.png" alt="" class="h-[60px]">
+            <div class="wow animate__animated animate__zoomIn h flex  justify-center items-center xl:h-[7vw] border bg-[#F5F5F5]">
+                <img src="assets/logo-small.png" alt="" class="h-[25px] xl:text-[auto]"> 
+                <h1 class="font-bold text-2xl mr-2 text-[10px]"> Get the app </h1>
+                <img src="assets/app1.svg" alt="" class="h-[20px]">
+                <img src="assets/app2.png" alt="" class="h-[30px] xl:h-[60px]">
             </div>
-            <div class="h1 grid grid-cols-3 h-[12vw]">
+            <div class="h1 grid grid-cols-1 xl:grid-cols-3 xl:h-[12vw]">
                 <div class="border h-full p-5 flex">
                     <h11 class="h-full w-[50%]">
-                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Frequently Asked Questions</h3>
+                        <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Frequently Asked Questions</h3>
                         <a href="">Virtual Try-On</a><br>
                         <a href="">Lenses</a><br>
                         <a href="">Shipping</a><br>
@@ -328,7 +334,7 @@
                 </div>
                 <div class="border h-full p-5 flex">
                     <h11 class="h-full w-[50%]">
-                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Customer Service</h3>
+                        <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Customer Service</h3>
                         <a href=""><i class="fa-solid fa-truck fa-xs"></i> Track My Order</a><br>
                         <a href=""><i class="fa-solid fa-arrow-right-arrow-left fa-xs"></i> Return Information</a><br>
                         <a href=""><i class="fa-solid fa-barcode fa-xs"></i> Gift Card Balance</a><br>
@@ -339,7 +345,7 @@
                 </div>
                 <div class="border h-full p-5 flex">
                     <h11 class="h-full w-[50%]">
-                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Have a Question?</h3>
+                        <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Have a Question?</h3>
                         <a href="">Visit Our Help Center</a><br>
                         <a href=""><i class="fa-solid fa-comments fa-xs"></i> Chat Support 24/7</a><br>
                         <a href=""><i class="fa-solid fa-envelope fa-xs"></i> Email</a><br>
@@ -351,10 +357,10 @@
                     </h11>
                 </div>
             </div>
-            <div class="h2 grid grid-cols-3 h-[33vw] border">
-                <div class="h-full p-[1vw] flex">
-                    <h22 class="h-full w-[50%]">
-                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Shop All</h3>
+            <div class="h2 grid grid-cols-1 xl:grid-cols-3 xl:h-[33vw] border">
+                <div class="h-full p-[1vw] xl:flex">
+                    <h22 class="h-full xl:w-[50%]">
+                        <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Shop All</h3>
                         <a href="" >All Glasses</a><br>
                         <a href="" >All Contacts</a><br>
                         <a href="" >All Women's Glasses</a><br>
@@ -368,8 +374,8 @@
                         <a href="">New Arrivals</a><br>
                         <a href="">Rush Delivery</a><br>
                     </h22>
-                    <h22 class="h-full w-[50%]">
-                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Shop Brands</h3>
+                    <h22 class="h-full xl:w-[50%]">
+                        <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Shop Brands</h3>
                         <a href="">    Shop All</a><br>
                         <a href="">Adidas</a><br>
                         <a href="">Jimmy Choo</a><br>
@@ -385,9 +391,9 @@
                         <a href="">Carrera</a><br>
                     </h22>
                 </div>
-                <div class="h-full p-[1vw] flex">
-                    <h22 class="h-full w-[50%] pr-[10px]">
-                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Infographics</h3>
+                <div class="h-full p-[1vw] xl:flex">
+                    <h22 class="h-full xl:w-[50%] pr-[10px]">
+                        <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Infographics</h3>
                         <a href="">View All</a><br>
                         <a href="">How to Measure Your PD</a><br>
                         <a href="">How to Use our Custom Dual PD Ruler</a><br>
@@ -397,8 +403,8 @@
                         <a href="">The Hidden Costs You Pay for Glasses</a><br>
                         <a href="">Lifetime Cost of Wearing Glasses</a><br>
                     </h22>
-                    <h22 class="h-full w-[50%]">
-                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">How To Videos</h3>
+                    <h22 class="h-full xl:w-[50%]">
+                        <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">How To Videos</h3>
                         <a href="">View All</a><br>
                         <a href="">How to Order Your Glasses Online</a><br>
                         <a href="">How to Measure your PD(Pupillary Distance)</a><br>
@@ -412,9 +418,9 @@
                       
                     </h22>
                 </div>
-                <div class="h-full p-[1vw] flex">
-                    <h22 class="h-full w-[50%]">
-                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">About Zenni Optical</h3>
+                <div class="h-full p-[1vw] xl:flex">
+                    <h22 class="h-full xl:w-[50%]">
+                        <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">About Zenni Optical</h3>
                         <a href=""> About Us</a><br>
                         <a href="">Site Map</a><br>
                         <a href="">Zenni Blog</a><br>
@@ -426,8 +432,8 @@
                         <a href="">Information</a><br>
                         
                     </h22>
-                    <h22 class="h-full w-[50%]">
-                        <h3 class="mb-4 font-semibold text-[1.1vw] text-[#666666]">Programs</h3>
+                    <h22 class="h-full xl:w-[50%]">
+                        <h3 class="mb-4 font-semibold xl:text-[1.1vw] text-[#666666]">Programs</h3>
                         <a href="">Next Day Contacts</a><br>
                         <a href="">Loyalty Program</a><br>
                         <a href="">Zenni Business</a><br>
@@ -459,5 +465,11 @@
           </div>
     <script src="js/script.js"></script>
     <script src="js/carttotal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+    new WOW().init();
+    </script>
+    
 </body>
 </html>

@@ -26,10 +26,6 @@ let a=document.querySelector("#creataccountmain")
    let passwordregex=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,15}$/;
 
 
-   if(username.length == 0 ){
-      document.querySelector("#usernameText").innerText=" Enter username"
-      isvalid=false
-   }
    if(emailregex.test(email)==false){
       document.querySelector("#emailText").innerText="  email is unvalid"
       isvalid=false
@@ -39,21 +35,37 @@ let a=document.querySelector("#creataccountmain")
       isvalid=false
    }
 
-   let objt={
+   let obj={
         username :username,
         email :email,
         password:password,
    }
 
-   console.log(objt)
+   console.log(obj)
 
-   fetch(`https://render-js01.onrender.com/user `,{
-    method :'POST',
-    Headers : {
-        'content-type' : 'application/json'
-    },
-    body : JSON.stringify(objt)
-   })
+   fetch(`https://render-js02.onrender.com/user`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(obj)
+      })
+     .then((r)=>{
+      return r.json()
+     })
+     .then((res)=>{
+      if(email == 0 && password == 0){
+        
+      }
+      else{
+         Swal.fire({
+            text: "Add Details successfule",
+            icon: "success"
+          });
+      }
+     
+     })
 
 })
 
@@ -64,7 +76,7 @@ document.querySelector("#signInmain").addEventListener("submit",(f)=>{
     let loginEmail=document.getElementById("loginEmail").value
     let loginPassword=document.getElementById("loginPassword").value
 
-    fetch('https://render-js01.onrender.com/user').then((r)=>{
+    fetch('https://render-js02.onrender.com/user').then((r)=>{
         return r.json()
     })
     .then((res)=>{
@@ -93,3 +105,4 @@ document.querySelector("#signInmain").addEventListener("submit",(f)=>{
         console.log(err)
     })
 })
+

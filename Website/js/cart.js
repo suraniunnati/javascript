@@ -14,7 +14,6 @@
   function view(arr) {
     let add=0;
     return arr.map((ele) => {
-      
      add+=ele.price*ele.quantity
       document.getElementById("price").innerHTML="$"+ add.toFixed(2);
       return ` <tr>
@@ -41,6 +40,7 @@
     } else if (clickbtn == 'dec') {
         a = a - 1
         if (a < 1) {
+          
           document.getElementById("add").setAttribute("disabled");
         }
     }
@@ -57,6 +57,7 @@
     })
         .then((res) => {
             console.log(res)
+            window.location.reload()
         })
         .catch((err) => {
             console.log(err)
@@ -76,6 +77,7 @@ function deleteItem(id) {
       return res.json();
     })
     .then((res) => {
+      window.location.reload()
       document.getElementById("AddCart").innerHTML = view(res);
     })
     .catch((err) => {
