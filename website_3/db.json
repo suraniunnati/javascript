@@ -1,5 +1,42 @@
 {
     "user":[],
-    "product":[],
+    "product":[
+        {"img":"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/d/b/db453c4LAKME00000014_M.jpg",
+         "title":"Lakme 9 To 5 Powerplay Priming Matte Lipstick, Lasts hrs",
+         "price":520,
+         "mrp":650,
+         "off":20,
+         "rate":69830,
+         "type":"makeup",
+         "category":"Lipstick",
+         "color":"brown",
+         "brand":"lakme",
+         "finish":"Matte"  
+        },
+        {"img":"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/8/88de6dd8901030758942_M.jpg",
+        "title":"Lakme Forever Matte Liquid Lip Color, 16Hr Lipstick, Lightwe...",
+        "price":386,
+        "mrp":429,
+        "off":10,
+        "rate":123362,
+        "type":"makeup",
+        "category":"Lipstick",
+        "color":"maroon",
+        "brand":"lakme",
+        "finish":"Matte"  
+       },
+       {"img":"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/8/88de6dd8901030601750_M.jpg",
+       "title":"Lakme Double Duty Lip & Cheek Mousse Matte Lipstick & Soft B...",
+       "price":580,
+       "mrp":725,
+       "off":20,
+       "rate":52415,
+       "type":"makeup",
+       "category":"Lipstick",
+       "color":"nude",
+       "brand":"lakme",
+       "finish":"Matte"  
+      }
+    ],
     "cart":[]
 }

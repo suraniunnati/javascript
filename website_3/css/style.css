@@ -1,0 +1,19 @@
+.hedline{
+    background-image: url("https://images-static.naikaa.com/media/wysiwyg/2021/common-strip.jpg");
+    background-size: cover;
+}
+.hedline1{
+    animation: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    animation-delay: 2s;
+}
+@keyframes move{
+to{
+    margin-top: 10%;
+}
+}
+.item img{
+    border-radius: 20px;
+}
