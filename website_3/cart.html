@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,63 +9,90 @@
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+
+<body class="bg-[#F3F3F3]">
     <div class="cart-page">
         <!-- Header -->
-        <header class="flex justify-between items-center p-4 bg-white shadow-md">
-            <div class="logo text-xl font-bold text-pink-600">Nykaa</div>
-            <div class="search-bar flex items-center border rounded-lg p-2">
-                <input type="text" class="p-2 w-96 border-none outline-none" placeholder="Search for products...">
+        <div class="hedline h-10 flex justify-around">
+            <div class="hedline1 text-white flex items-center justify-evenly">
+                <p><b>BEAUTY BONANZA</b> Get Your Amazing Deals</p>
             </div>
-            <div class="cart-icon text-xl text-pink-600">
-                <span>Cart (3)</span>
-            </div>
-        </header>
-    
-        <!-- Main Cart Section -->
-        <div class="flex justify-between p-8">
-            <!-- Cart Items -->
-            <div class="w-3/5">
-                <div id="cartbox"></div>
-               
-            </div>
-    
-            <!-- Cart Summary -->
-            <div class="w-2/5 bg-gray-50 p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-4">Cart Summary</h3>
-                <div class="mb-2 flex justify-between">
-                    <span>Subtotal</span>
-                    <span>₹1500</span>
-                </div>
-                <div class="mb-2 flex justify-between">
-                    <span>Delivery Charges</span>
-                    <span>₹50</span>
-                </div>
-                <div class="mb-4 flex justify-between">
-                    <span class="font-bold">Total</span>
-                    <span class="font-bold text-xl">₹1550</span>
-                </div>
-                <button class="w-full bg-pink-600 text-white py-3 rounded-lg mt-4 hover:bg-pink-700">Proceed to Checkout</button>
+            <div class="headline2 flex items-center justify-evenly text-white w-[30%] h-full">
+                <p><i class="fa-solid fa-mobile-screen-button"></i> Get App</p>
+                <p>|</p>
+                <p><i class="fa-solid fa-location-dot"></i> Store & Event</p>
+                <p>|</p>
+                <p><i class="fa-solid fa-gift"></i> Gift Card</p>
+                <p>|</p>
+                <p><i class="fa-regular fa-circle-question"></i> Help</p>
             </div>
         </div>
-    
-        <!-- Footer -->
-        <footer class="flex justify-between items-center p-4 bg-gray-100 border-t">
-            <div class="footer-links">
-                <a href="#" class="text-pink-600 hover:text-pink-800">Privacy Policy</a>
-                <a href="#" class="ml-4 text-pink-600 hover:text-pink-800">Terms of Use</a>
-                <a href="#" class="ml-4 text-pink-600 hover:text-pink-800">Contact Us</a>
+        <div class="header1 flex items-center justify-between p-3 h-[55%] border-b bg-white">
+                <div class="logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShaPZu8_wN39I3Q4-EBCY0yn1NKHOHsb0QLQ&s"
+                        alt="" width="140px">
+                </div>
+            
+            <div class="search w-[30%] flex justify-evenly items-center">
+                <input type="text" placeholder="Search on Nykaa" class="border rounded-lg h-10 bg-[#F4F4F4] w-72 ps-3">
+                <button class="bg-[#EC2988] rounded-lg h-10 w-20 text-white">Sign in</button>
+                <i class="fa-solid fa-bag-shopping fa-lg"></i>
             </div>
-            <div class="social-media">
-                <a href="#" class="text-pink-600 hover:text-pink-800">Instagram</a>
-                <a href="#" class="ml-4 text-pink-600 hover:text-pink-800">Facebook</a>
-                <a href="#" class="ml-4 text-pink-600 hover:text-pink-800">Twitter</a>
+        </div>
+        
+
+        <!-- Main Cart Section -->
+        <div class="flex justify-evenly p-8 w-[80%] m-auto ">
+            <!-- Cart Items -->
+            <div class="w-[60%] flex flex-col">
+                <div id="cartbox" class="bg-white p-2 rounded-lg"></div>
+
             </div>
-        </footer>
+
+            <!-- Cart Summary -->
+            <div class="w-[350px] h-[450px]  p-6 rounded-lg shadow-md bg-white">
+                <div class="border rounded-lg p-2">
+                    <p>Get Started & grab best offers!</p>
+                    <a href="login.html"><button
+                            class="text-[#E80071] border rounded-lg p-1 font-bold w-[280px] mt-2">Login/Register</button></a>
+                </div>
+                <div class="border rounded-lg p-2 mt-3">
+                    <h3 class="text-xl font-bold mb-4">Price Details</h3>
+                    <div class="mb-2 flex justify-between">
+                        <span>Bag MRP</span>
+                        <span id="MRPprice"></span>
+                    </div>
+                    <div class="mb-2 flex justify-between">
+                        <span>Bag Discount</span>
+                        <span id="dis"></span>
+                    </div>
+
+                    <div class="mb-2 flex justify-between">
+                        <span>Shipping <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-green-700">Free</span>
+                    </div>
+                    <div class="mb-4 flex justify-between">
+                        <span class="font-bold">You Pay</span>
+                        <span class="font-bold text-xl" id="total"></span>
+                    </div>
+                </div>
+                <div class="border rounded-lg p-2 mt-3">
+                    <b>Grand Total : </b>
+                    <b id="Total"></b>
+                    <button class="w-full bg-pink-600 text-white py-2 rounded-lg mt-4 hover:bg-pink-700">Proceed to
+                        Checkout</button>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-    
+
 </body>
 <script src="js/cart.js"></script>
+
 </html>
