@@ -11,9 +11,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div>
-        <div id="cartbox"></div>
+    <div class="cart-page">
+        <!-- Header -->
+        <header class="flex justify-between items-center p-4 bg-white shadow-md">
+            <div class="logo text-xl font-bold text-pink-600">Nykaa</div>
+            <div class="search-bar flex items-center border rounded-lg p-2">
+                <input type="text" class="p-2 w-96 border-none outline-none" placeholder="Search for products...">
+            </div>
+            <div class="cart-icon text-xl text-pink-600">
+                <span>Cart (3)</span>
+            </div>
+        </header>
+    
+        <!-- Main Cart Section -->
+        <div class="flex justify-between p-8">
+            <!-- Cart Items -->
+            <div class="w-3/5">
+                <div id="cartbox"></div>
+               
+            </div>
+    
+            <!-- Cart Summary -->
+            <div class="w-2/5 bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Cart Summary</h3>
+                <div class="mb-2 flex justify-between">
+                    <span>Subtotal</span>
+                    <span>₹1500</span>
+                </div>
+                <div class="mb-2 flex justify-between">
+                    <span>Delivery Charges</span>
+                    <span>₹50</span>
+                </div>
+                <div class="mb-4 flex justify-between">
+                    <span class="font-bold">Total</span>
+                    <span class="font-bold text-xl">₹1550</span>
+                </div>
+                <button class="w-full bg-pink-600 text-white py-3 rounded-lg mt-4 hover:bg-pink-700">Proceed to Checkout</button>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <footer class="flex justify-between items-center p-4 bg-gray-100 border-t">
+            <div class="footer-links">
+                <a href="#" class="text-pink-600 hover:text-pink-800">Privacy Policy</a>
+                <a href="#" class="ml-4 text-pink-600 hover:text-pink-800">Terms of Use</a>
+                <a href="#" class="ml-4 text-pink-600 hover:text-pink-800">Contact Us</a>
+            </div>
+            <div class="social-media">
+                <a href="#" class="text-pink-600 hover:text-pink-800">Instagram</a>
+                <a href="#" class="ml-4 text-pink-600 hover:text-pink-800">Facebook</a>
+                <a href="#" class="ml-4 text-pink-600 hover:text-pink-800">Twitter</a>
+            </div>
+        </footer>
     </div>
+    
 </body>
 <script src="js/cart.js"></script>
 </html>

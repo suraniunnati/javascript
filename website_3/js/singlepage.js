@@ -22,13 +22,14 @@ function show(arr) {
     return `<div class="flex shadow-lg w-[80%] m-[auto] bg-white p-3">
     <div class="w-[35%] flex items-center border-e">
     <div class="w-[20%]  flex flex-col justify-center items-center ">
-     <img src="${arr.img}" class="w-[50px] border  mt-2 p-1">
-     <img src="${arr.img1}" class="w-[50px] border  mt-2 p-1">
-      <img src="${arr.img2}" class="w-[50px] border  mt-2 p-1">
-       <img src="${arr.img3}" class="w-[50px] border  mt-2 p-1">
-        <img src="${arr.img4}" class="w-[50px] border  mt-2 p-1">
+     <img src="${arr.img}"  onclick="showImage(this)" class="w-[55px] border  mt-5 p-1">
+     <img src="${arr.img1}"  onclick="showImage(this)" class="w-[55px] border  mt-5 p-1">
+      <img src="${arr.img2}"  onclick="showImage(this)" class="w-[55px] border  mt-5 p-1">
+       <img src="${arr.img3}"  onclick="showImage(this)" class="w-[55px] border  mt-5 p-1">
+        <img src="${arr.img4}"  onclick="showImage(this)" class="w-[55px] border  mt-5 mb-5 p-1">
     </div>
-     <div> <img src="${arr.img}" class=" w-[250px]"></div>
+     <div class="image-container w-[300px] "> <img src="${arr.img}" id="mainImage" class="zoom-image"  alt="Zoomable Image"  onmousemove="zoomIn(event)" 
+        onmouseleave="zoomOut(event)"></div>
    </div>
             <div class="ps-5 w-[60%] mt-2"><h2 class="font-medium mb-2 text-xl">${arr.title}</h2>
              <h5 class="mt-2">
@@ -65,6 +66,25 @@ function show(arr) {
             </div>
             </div>
     `
+}
+
+// #img change
+function showImage(thumbnail) {
+  const thumbnailSrc = thumbnail.src;
+  document.getElementById("mainImage").src = thumbnailSrc;
+}
+// #zoom img
+function zoomIn(event) {
+  const image = event.target; 
+  const rect = image.getBoundingClientRect();
+  const x = ((event.clientX - rect.left) / rect.width) * 100;
+  const y = ((event.clientY - rect.top) / rect.height) * 100;
+  image.style.transform = `scale(2) translate(-${x - 50}%, -${y - 50}%)`;
+}
+
+function zoomOut(event) {
+  const image = event.target; 
+  image.style.transform = "scale(1)";
 }
 
 

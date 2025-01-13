@@ -6,6 +6,51 @@ function Product(){
         console.log(res)
         document.getElementById("product").innerHTML=view(res)
 
+        // #main
+        let isFiltered = false;
+        document.getElementById("makeup").addEventListener("click", function (event) {
+            event.preventDefault(); 
+            if(! isFiltered){
+            const filteredProducts1 = makeup(res);
+            document.getElementById("product").innerHTML = view(filteredProducts1);}
+            else{
+                document.getElementById("product").innerHTML = view(res);
+                isFiltered = false; 
+            }
+        });
+        document.getElementById("skin").addEventListener("click", function (event) {
+            event.preventDefault(); 
+            if(!isFiltered){
+            const filteredProducts1 = skin(res);
+            document.getElementById("product").innerHTML = view(filteredProducts1);}
+            else{
+                document.getElementById("product").innerHTML = view(res);
+                isFiltered = false; 
+            }
+        });
+        document.getElementById("hair").addEventListener("click", function (event) {
+            event.preventDefault(); 
+            if(!isFiltered){
+            const filteredProducts1 = hair(res);
+            document.getElementById("product").innerHTML = view(filteredProducts1);}
+            else{
+                document.getElementById("product").innerHTML = view(res);
+                isFiltered = false; 
+            }
+        })
+        document.getElementById("appliances").addEventListener("click", function (event) {
+            event.preventDefault(); 
+            if(!isFiltered){
+            const filteredProducts1 = appliances(res);
+            document.getElementById("product").innerHTML = view(filteredProducts1);}
+            else{
+                document.getElementById("product").innerHTML = view(res);
+                isFiltered = false; 
+            }
+        });
+        
+
+
         // #price
         document.getElementById("fil1").addEventListener("change", function () {
             if (this.checked) { const filteredProducts1 = fil1(res); document.getElementById("product").innerHTML = view(filteredProducts1); }
@@ -165,6 +210,12 @@ function view(arr){
         </div>`
     }).join("")
 }
+
+// #main filter
+function makeup(arr) { return arr.filter((ele) => ele.type == "makeup"); }
+function skin(arr) { return arr.filter((ele) => ele.type == "skin"); }
+function hair(arr) { return arr.filter((ele) => ele.type == "hair"); }
+function appliances(arr) { return arr.filter((ele) => ele.type == "appliances"); }
 
 // #price filter
 function fil1(arr){
