@@ -2,7 +2,14 @@ function Cart(){
     fetch(`http://localhost:3000/cart`)
     .then((r)=>r.json())
     .then((res)=>{
+      
+        if(res.length===0){
+            console.log("error....")
+            document.getElementById("cartbox").innerHTML=defult(res)
+        }
+        else{
         document.getElementById("cartbox").innerHTML=view(res)
+        }
     })
     .catch((err)=>{console.log(err)})
 
@@ -50,6 +57,14 @@ function view(arr){
         </div>
         `
     }).join("")
+}
+function defult(arr){
+    return `<div class="flex flex-col items-center text-center p-5">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/3bd05447340145.587755b7635a0.gif" width="200px">
+        <p class="mt-2 font-medium">Your cart is Empty</p>
+        <p class="text-sm mt-2">Looks like you have not added anything to your cart. <br/>Go ahead & explore top categories.</p>
+        <a href="product.html" class="bg-pink-600 rounded-lg text-sm text-white p-2 mt-2">Continue Shopping</a>
+    </div>`
 }
 
 function Addcart(id,queinty, clickbtn) {

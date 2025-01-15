@@ -33,3 +33,8 @@ to{
     transition: transform 0.3s ease; 
 
 }
+.lo{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn8FiAFBtiwFDcgmeuTO6S_pcJXUOoiMyUUA_-hCQiAFfxcAp_");
+    background-size: cover;
+    background-position: center;
+}

@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
+
 <body>
-    
+    <div class="hedline h-10 flex justify-around">
+        <div class="hedline1 text-white flex items-center justify-evenly">
+            <p><b>BEAUTY BONANZA</b> Get Your Amazing Deals</p>
+        </div>
+        <div class="headline2 flex items-center justify-evenly text-white w-[30%] h-full">
+            <p><i class="fa-solid fa-mobile-screen-button"></i> Get App</p>
+            <p>|</p>
+            <p><i class="fa-solid fa-location-dot"></i> Store & Event</p>
+            <p>|</p>
+            <p><i class="fa-solid fa-gift"></i> Gift Card</p>
+            <p>|</p>
+            <p><i class="fa-regular fa-circle-question"></i> Help</p>
+        </div>
+    </div>
+    <!-- #signup -->
+    <div class="flex justify-center items-center h-[600px] bg-[#F3F4F6]">
+        <div id="signUPform" class="h-[420px] w-[700px] rounded-xl overflow-hidden shadow-md hidden">
+            <div class="lo h-full w-[40%] flex flex-col justify-center items-center text-white float-start">
+                <h1 class="font-bold text-2xl mb-2">Welcome Back!</h1>
+                <p class="text-sm">Sign back in to view your<br> account & makeup goodness.</p>
+                <button class="border rounded-full p-1 w-28 font-bold mt-2">Sign In</button>
+            </div>
+            <div class="w-[60%] h-full text-center float-start bg-white">
+               <a href="index.html"> <img src="https://beebom.com/wp-content/uploads/2018/04/Nykaa-Logo-website.jpg?w=750&quality=75" alt=""
+                    width="150px" class="m-auto"></a>
+                <h1 class="text-pink-600 font-bold text-xl mb-2">Create Account</h1>
+                <i
+                    class="fa-brands fa-facebook-f border border-cyan-500 rounded-full h-8 w-8 leading-8 text-cyan-500"></i>
+                <i class="fa-brands fa-google border border-pink-500 rounded-full h-8 w-8 leading-8 text-pink-500"></i>
+                <form action="" id="signupform" class="text-center mt-2">
+                    <input type="text" placeholder=" Username" id="name"
+                        class="border mt-2 ps-2 w-[250px] h-8 bg-gray-100"><br>
+                    <input type="text" placeholder=" Email" id="email"
+                        class="border mt-2 ps-2 w-[250px] h-8 bg-gray-100">
+                        <span id="emailText" class="text-[10px] text-[#B7202A]"></span>
+                        <br>
+                    <input type="text" placeholder="Password" id="passowrd"
+                        class="border mt-2 ps-2 w-[250px] h-8 bg-gray-100">
+                        <span id="passwordText" class="text-[10px] text-[#B7202A]"></span>
+                        <br>
+                    <button class="bg-pink-600 text-white mt-2 p-1 rounded-full w-[100px] h-8">submit</button>
+                </form>
+                <p id="login" class="text-pink-600 mt-[12%] text-sm cursor-pointer">login with nykaa</p>
+            </div>
+        </div>
+
+        <!-- #login -->
+        <div id="loginForm" class="h-[420px] w-[700px] rounded-xl overflow-hidden shadow-md ">
+            <div class="lo h-full w-[40%] flex flex-col justify-center items-center text-white float-start">
+                <h1 class="font-bold text-2xl mb-2">Welcome Back!</h1>
+                <p class="text-sm">Sign back in to view your<br> account & makeup goodness.</p>
+                <button class="border rounded-full p-1 w-28 font-bold mt-2">Login</button>
+            </div>
+            <div class="w-[60%] h-full text-center float-start bg-white">
+                <a href="index.html"><img src="https://beebom.com/wp-content/uploads/2018/04/Nykaa-Logo-website.jpg?w=750&quality=75" alt=""
+                    width="150px" class="m-auto"></a>
+                <h1 class="text-pink-600 font-bold text-xl mb-2">Login With Account</h1>
+                <i
+                    class="fa-brands fa-facebook-f border border-cyan-500 rounded-full h-8 w-8 leading-8 text-cyan-500"></i>
+                <i class="fa-brands fa-google border border-pink-500 rounded-full h-8 w-8 leading-8 text-pink-500"></i>
+                <form action="" id="loginform" class="text-center mt-2">
+                    <input type="text" placeholder=" Email" id="loginEmail"
+                        class="border mt-2 ps-2 w-[250px] h-8 bg-gray-100"><br>
+                    <input type="text" placeholder=" Password" id="loginPassowrd"
+                        class="border mt-2 ps-2 w-[250px] h-8 bg-gray-100">
+                        <span class="text-[12px] text-[#B7202A]" id="notmatch"></span>
+                        <br>
+                    <button class="bg-pink-600 text-white mt-2 p-1 rounded-full w-[100px] h-8">submit</button>
+                </form>
+                <p id="signUP" class="text-pink-600 mt-[20%] text-sm cursor-pointer">signUP with nykaa</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot1 flex flex-wrap justify-center items-center bg-[#3A4047] p-4 text-white">
+        <div class="f1 sm:w-[22%]  mt-5 xl:mt-1">
+            <p><i class="fa-solid fa-envelope"></i> Get special discount on your inbox</p>
+            <input type="text" placeholder="Enter Email" class="border-b border-white ps-1 bg-inherit">
+            <button class="border border-white w-[70px]">SEND</button>
+        </div>
+        <div class="f1 sm:w-[25%] mt-5 xl:mt-1 text-center">
+            <p><i class="fa-solid fa-mobile-screen-button"></i> experience the nykaa mobile app</p>
+        </div>
+        <div class="f1 sm:w-[25%] mt-5 xl:mt-1">
+            <p><i class="fa-solid fa-phone"></i> for any help, you may call us at1800-267-4444</p>
+            <p class="text-[12px] ms-5">(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
+        </div>
+    </div>
 </body>
+
+<script src="js/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </html>
