@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Payment Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+   <!-- font-awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+   integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Custom styles for animations */
+    .fade-in {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 via-white to-purple-100 min-h-screen">
+  <!-- header -->
+  <div class="hedline h-10 flex justify-around">
+    <div class="hedline1 text-white flex items-center justify-evenly">
+        <p><b>BEAUTY BONANZA</b> Get Your Amazing Deals</p>
+    </div>
+    <div class="headline2 flex items-center justify-evenly text-white w-[30%] h-full">
+        <p><i class="fa-solid fa-mobile-screen-button"></i> Get App</p>
+        <p>|</p>
+        <p><i class="fa-solid fa-location-dot"></i> Store & Event</p>
+        <p>|</p>
+        <p><i class="fa-solid fa-gift"></i> Gift Card</p>
+        <p>|</p>
+        <p><i class="fa-regular fa-circle-question"></i> Help</p>
+    </div>
+</div>
+<div class="header1 flex items-center justify-between p-3 h-[55%] border-b bg-white">
+  <div class="logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShaPZu8_wN39I3Q4-EBCY0yn1NKHOHsb0QLQ&s"
+          alt="" width="140px">
+  </div>
+
+<div class="search w-[30%] flex justify-evenly items-center">
+  <input type="text" placeholder="Search on Nykaa" class="border rounded-lg h-10 bg-[#F4F4F4] w-72 ps-3">
+  <button class="bg-[#EC2988] rounded-lg h-10 w-20 text-white">Sign in</button>
+  <i class="fa-solid fa-bag-shopping fa-lg"></i>
+</div>
+</div>
+
+  <div class="container mx-auto p-8">
+    <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-6">
+      <h1 class="text-2xl font-bold text-pink-500 mb-6 text-center">
+        Choose Your Payment
+      </h1>
+
+      <!-- Payment Options -->
+      <form id="payment-form">
+        <div class="space-y-4">
+          <div class="flex items-center border rounded-lg p-4 hover:bg-pink-50 transition">
+            <input
+              type="radio"
+              id="cod"
+              name="payment"
+              value="Cash on Delivery"
+              class="mr-3"
+            />
+            <label for="cod" class="flex items-center space-x-2">
+              <i class="fa-solid fa-cash-register"></i>
+              <span class="text-gray-700 font-medium">Cash on Delivery</span>
+            </label>
+          </div>
+
+          <div class="flex items-center border rounded-lg p-4 hover:bg-pink-50 transition">
+            <input
+              type="radio"
+              id="online"
+              name="payment"
+              value="Online Payment"
+              class="mr-3"
+            />
+            <label for="online" class="flex items-center space-x-2">
+              <i class="fa-brands fa-google-pay"></i>
+              <span class="text-gray-700 font-medium">Online Payment</span>
+            </label>
+          </div>
+
+          <div class="flex items-center border rounded-lg p-4 hover:bg-pink-50 transition">
+            <input
+              type="radio"
+              id="upi"
+              name="payment"
+              value="UPI"
+              class="mr-3"
+            />
+            <label for="upi" class="flex items-center space-x-2">
+              <i class="fa-solid fa-angles-right"></i>
+              <span class="text-gray-700 font-medium">UPI</span>
+            </label>
+          </div>
+
+          <div class="flex items-center border rounded-lg p-4 hover:bg-pink-50 transition">
+            <input
+              type="radio"
+              id="card"
+              name="payment"
+              value="Debit/Credit Card"
+              class="mr-3"
+            />
+            <label for="card" class="flex items-center space-x-2">
+              <i class="fa-regular fa-credit-card"></i>
+              <span class="text-gray-700 font-medium">Debit/Credit Card</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Payment Details -->
+        <div id="payment-details" class="mt-6 hidden fade-in">
+          <!-- Dynamic content will be added here -->
+        </div>
+
+        <!-- Submit Button -->
+        <div class="mt-6 text-center">
+          <button
+            type="submit"
+            class="bg-pink-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-pink-600 transition"
+          >
+            Confirm Payment
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+<script src="js/payment.js"></script>
+</html>
